@@ -1,0 +1,496 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --myBgm-color: rgba(243, 246, 248, 0.8);
+    --myFont-color: rgba(0, 0, 0, 1);
+    --myFont-style : sans-serif;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--myBgm-color);
+    font-family: var(--myFont-style);
+    color: var(--myFont-color);
+}
+
+
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+#header
+{
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 0px 3px black;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logoImg
+{
+    width: 7%;
+    height: 80%;
+    /* border: 2px solid sandybrown; */
+    /* margin-left: */
+}
+
+
+#nav-bar
+{
+    width: 45%;
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid aqua; */
+}
+
+
+#nav-bar ul
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    /* border: 2px solid firebrick; */
+}
+
+
+#nav-bar ul li 
+{ 
+    height: 100%;
+}
+
+
+#nav-bar ul li a
+{
+    text-decoration: none;
+    color: var(--myFont-color);
+    font-size: 18px;
+}
+
+
+#navBoxs
+{
+    height: 100%;
+    /* border-radius: 10px; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#navBoxs:hover
+{
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    color: blue;
+    border-bottom: 5px solid blue;
+}
+
+
+#navLogos
+{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5px;
+}
+
+
+.otherLinks
+{
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid aqua; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.searchLogo:hover
+{
+    transform: scale(1.2);
+}
+
+
+#home
+{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 3px solid orange; */
+}
+
+
+.elemDetailBox
+{
+    width: 20%;
+    height: 85vh;
+    box-shadow: 1px 1px 3px black;
+    /* border: 2px solid aqua; */
+    overflow: hidden; 
+    margin-left: 5px;
+}
+
+
+.elemDetailBox > table, td, tr
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+#elemDetailTable
+{
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  color: black;
+}
+
+
+#elemDetailTable td
+{
+    padding: 0px 5px;
+}
+
+.leftDetailTableColumn
+{
+    width: 40%;
+}
+
+#elemDetailTable tr
+{
+    height: 20px;
+}
+
+
+#eleTitle
+{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(180, 180, 180);
+}
+
+
+#eleSumTag
+{
+    text-align: center;
+}
+
+
+#eleSummary
+{
+    height: 100px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.tempMeter
+{
+    width: 3%;
+    height: 85vh;
+    border: 1px solid red;
+}
+
+.tableBox
+{
+    width: 72%;
+    height: 85vh;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+    border: 2px solid yellow;
+}
+
+.upperTable
+{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: 2px solid pink; */
+}
+
+.textBlock
+{
+    width:  100%;
+    height: 2vh;
+}
+
+.lowerTable  
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 2px solid blue; */
+    position: relative;
+    left: 14px;
+}
+
+
+.t1, .t2, .t3, .t4, .t5, .t6
+{
+    border-spacing: 3px;
+}
+
+.t3Block
+{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.t4Block
+{
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.eleCategories
+{   
+   max-height: 80px;
+   max-width: 250px;
+   margin-bottom: 5px;
+}
+
+#eleCatTable
+{
+    width: 100%;
+    height: 80px;
+    border-spacing: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ng
+{
+    background-color: rgb(229, 189, 229);
+    /* border: 1px solid ; */
+}
+
+.rnm
+{
+    background-color: hsl(120deg, 73%, 79%);
+    /* border: 1px solid ; */
+}
+
+.mtl
+{
+    background-color: hsl(165deg, 58%, 76%);
+    /* border: 1px solid ; */
+}
+
+.ptm
+{
+    background-color: hsl(192deg, 62%, 80%);
+    /* border: 1px solid ; */
+}
+
+.tm
+{
+    background-color: hsl(12deg, 87%, 85%);
+    /* border: 1px solid ; */
+}
+
+.ltd
+{
+    background-color: hsl(42deg, 62%, 76%);
+    /* border: 1px solid ; */
+}
+
+.act
+{
+    background-color: hsl(340deg, 67%, 88%);
+    /* border: 1px solid ; */
+}
+
+.ake
+{
+    background-color: hsl(60deg, 83%, 67%);
+    /* border: 1px solid ; */
+}
+
+.alk
+{
+    background-color: hsl(48deg, 77%, 64%);
+    /* border: 1px solid ; */
+}
+
+.ukn
+{
+    background-color: rgb(180, 180, 180);
+    /* border: 1px solid ; */
+}
+
+#eleCatTable tr td
+{
+    padding: 0px 5px;
+}
+
+#eleTileBlock   
+{
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.eleTiles
+{
+    width: 100%;
+    height: 100%;
+    max-height: 175px;
+    /* border: 2px solid blue; */
+}
+
+#eleSqBox
+{
+    border: 5px solid;
+    display: flex;
+}
+
+.paraLeft
+{
+    width: 85%;
+    height: 100%;
+    /* border: 1px solid tomato; */
+    padding: 5px;
+    z-index: 0; 
+    overflow: hidden;
+    margin-left: 5px
+}
+
+#paraAtomNo
+{
+    font-size: 35px;
+}
+
+#paraEleSymbole
+{
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 2px 0;
+    text-align: center;
+}
+
+#paraEleName
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#paraAtomMass
+{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.paraRight
+{
+    width: 18%;
+    height: 100%;
+    /* border: 1px solid palegreen; */
+    text-align: right;
+    padding-right: 5px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.t1 td, .t2 td, .t3 td, .t4 td, .t5 td, .t6 td
+{
+    max-width: 47px;
+    max-height: 47px;
+    overflow: hidden;
+    border: none;
+}
+
+.t1 td a, .t2 td a, .t3 td a, .t4 td a, .t5 td a, .t6 td a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.eleCell
+{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    font-weight: bolder;
+    border: 2px solid rgba(27, 26, 26, 0.8);
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.eleCell:hover
+{
+    border: 2px solid yellow;
+}
+
+.alignCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullHeight
+{
+    min-width: 47px;
+    min-height: 49px;
+}
+
+.eleSymbole
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.eleName
+{
+    text-align: center;
+    font-size: 8px;
+}
+
+.eleAtomicNo
+{
+    text-align: right;
+}

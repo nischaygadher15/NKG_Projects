@@ -1,0 +1,191 @@
+body
+{
+    margin: 0px;
+    background-color: rgba(209, 203, 202, 0.5);
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header starts here */
+header
+{
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0px;
+}
+
+#logo
+{
+    max-width: max(100px, 18vw);
+    height: auto ;
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+#headerTitle
+{
+    width: 40%;
+    color:#f1be32;
+    font-size: min(5vw, 1.5em);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding-left: 200px;
+}
+
+/* Navigation Bar starts here */
+
+nav
+{
+    width: 50%;
+    max-width: 500px;
+    height: 50px;
+    padding-right:50px;
+}
+
+nav > ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav > ul > li
+{
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+    display: block;
+}
+
+nav > ul > li > a
+{
+    color: #dfdfe2;
+    text-decoration: none;
+}
+
+nav > ul > li> a:hover
+{
+    color:#1b1b32;
+    background-color: #dfdfe2;
+    cursor: pointer;
+}
+
+/* Main section starts here */
+
+#main
+{
+   margin: 10px;
+}
+
+/* Subheader starts here */
+
+#title
+{
+    font-size: 1.2rem; 
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 10px; 
+    padding-bottom: 0px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* Figure starts here */
+
+#img-div
+{
+    background-color: white;
+    padding: 10px;
+    margin: 30px;
+}
+
+#image
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-caption
+{
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+/* Container start from here */
+
+#tribute-info
+{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.subtitle
+{
+    text-align: center;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+#tribute-info ul li
+{
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+#quote
+{
+    line-height: 25px;
+}
+
+#quoteAth
+{
+    margin: 25px auto;
+}
+
+#endLine
+{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#tribute-link
+{
+    font-size: 1.2em;
+}
+
+
+/* Footer starts here */
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: center;
+}
+
+footer, footer a
+{
+    color: #dfdfe2;
+}
+
+footer a
+{
+    text-decoration: none;
+}

@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Periodic Table</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header id="header">
+                <div id="logoImg">
+                    <a href="https://ptable.com/#Properties" target="_blank"><img src="./Images/ptable-logo.svg" alt="Website Logo"></a>
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#"><div id="navBoxs"><img src="./Images/iconmonstr-line-three-horizontal-lined.svg" alt="Menu Logo" id="navLogos">Properties</div></a></li>
+                        <li><a href="#"><div id="navBoxs"><img src="./Images/icons8-atom.svg" alt="Atom Logo" id="navLogos">Electrons</div></a></li>
+                        <li><a href="#"><div id="navBoxs"><img src="./Images/Isotops.svg" alt="Atoms Logo" id="navLogos">Isotopes</div></a></li>
+                        <li><a href="#"><div id="navBoxs"><img src="./Images/chemical_compound.svg" alt="Compounds Logo" id="navLogos">Compounds</div></a></li>
+                    </ul>
+                </nav>
+                <div class="otherLinks">
+                    <a href="#"><img src="./Images/search.svg" alt="Search Logo" id="navLogos" class="searchLogo"></a>
+                </div>
+            </header>
+
+            <section id="home">
+                <div class="elemDetailBox">
+                        <table id="elemDetailTable">
+                            <tr>
+                                <td colspan="2" id="eleTitle"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Category</td>
+                                <td id="eleCategory"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Discovered by</td>
+                                <td id="eleDiscovered"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">State at</td>
+                                <td id="eleState"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Weight</td>
+                                <td id="eleWeight"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Energy Level</td>
+                                <td id="eleEnergy"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Electronnegetivity</td>
+                                <td id="eleEleN"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Melting point</td>
+                                <td id="eleMelting"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Boiling point</td>
+                                <td id="eleBoiling"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Electron affinity</td>
+                                <td id="eleEleAf"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Ionization, 1st</td>
+                                <td id="eleIonization"></td>
+                            </tr>
+                            <tr>
+                                <td class="leftDetailTableColumn">Density</td>
+                                <td id="eleDensity"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="eleSumTag">Summary</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="eleSummary"></td>
+                            </tr>
+                            <!-- <tr>
+                                <td colspan="2" id="eleInfo"></td>
+                            </tr> -->
+                        </table>
+                </div>
+                <div class="tempMeter">
+                      
+                </div>
+                <div class="tableBox">
+                        <div class="upperTable">
+                            <div>
+                                <table class="t1">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 1,Hydrogen,H,1.007 -->
+                                                    <p class="eleAtomicNo">1</p>
+                                                    <p class="eleSymbole">H</p>
+                                                    <p class="eleName">Hydrogen</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <!-- 3,Lithium,Li,6.941 -->
+                                                <div class="eleCell alk">
+                                                    <p class="eleAtomicNo">3</p>
+                                                    <p class="eleSymbole">Li</p>
+                                                    <p class="eleName">Lithium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alk">
+                                                    <!-- 11,Sodium,Na,22.99 -->
+                                                    <p class="eleAtomicNo">11</p>
+                                                    <p class="eleSymbole">Na</p>
+                                                    <p class="eleName">Sodium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alk">
+                                                    <!-- 19,Potassium,K,39.098 -->
+                                                    <p class="eleAtomicNo">19</p>
+                                                    <p class="eleSymbole">K</p>
+                                                    <p class="eleName">Potassium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alk">
+                                                    <!-- 37,Rubidium,Rb,85.468 -->
+                                                    <p class="eleAtomicNo">37</p>
+                                                    <p class="eleSymbole">Rb</p>
+                                                    <p class="eleName">Rubidium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alk">
+                                                    <!-- 55,Cesium,Cs,132.905 -->
+                                                    <p class="eleAtomicNo">55</p>
+                                                    <p class="eleSymbole">Cs</p>
+                                                    <p class="eleName">Cesium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alk">
+                                                    <!-- 87,Francium,Fr,223 -->
+                                                    <p class="eleAtomicNo">87</p>
+                                                    <p class="eleSymbole">Fr</p>
+                                                    <p class="eleName">Francium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="t2">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ake">
+                                                    <!-- 4,Beryllium,Be,9.012 -->
+                                                    <p class="eleAtomicNo">4</p>
+                                                    <p class="eleSymbole">Be</p>
+                                                    <p class="eleName">Beryllium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ake">
+                                                    <!-- 12,Magnesium,Mg,24.305 -->
+                                                    <p class="eleAtomicNo">12</p>
+                                                    <p class="eleSymbole">Mg</p>
+                                                    <p class="eleName">Magnesium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ake">
+                                                    <!-- 20,Calcium,Ca,40.078 -->
+                                                    <p class="eleAtomicNo">20</p>
+                                                    <p class="eleSymbole">Ca</p>
+                                                    <p class="eleName">Calcium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ake"> 
+                                                    <!-- 38,Strontium,Sr,87.62 -->
+                                                    <p class="eleAtomicNo">38</p>
+                                                    <p class="eleSymbole">Sr</p>
+                                                    <p class="eleName">Strontium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ake">
+                                                    <!-- 56,Barium,Ba,137.327 -->
+                                                    <p class="eleAtomicNo">56</p>
+                                                    <p class="eleSymbole">Ba</p>
+                                                    <p class="eleName">Barium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ake">
+                                                    <!-- 88,Radium,Ra,226 -->
+                                                    <p class="eleAtomicNo">88</p>
+                                                    <p class="eleSymbole">Ra</p>
+                                                    <p class="eleName">Radium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="t3Block">
+                                <div id="eleTileBlock">
+                                    <!-- Images Files going to pop up from third party website. -->
+                                    <div class="eleTiles" id="phyPic"></div>
+                                    <div class="eleTiles" id="eleSqBox">
+                                        <div class="paraLeft">
+                                            <p id="paraAtomNo"></p>
+                                            <p id="paraEleSymbole"></p>
+                                            <p id="paraEleName"></p>
+                                            <p id="paraAtomMass"></p>
+                                        </div>
+                                        <div class="paraRight">
+                                            <p id="paraAtomShell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="eleTiles" id="bohrModelPhoto"></div>
+                                </div>
+                                <table class="t3">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 21,Scandium,Sc,44.956 -->
+                                                    <p class="eleAtomicNo">21</p>
+                                                    <p class="eleSymbole">Sc</p>
+                                                    <p class="eleName">Scandium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 22,Titanium,Ti,47.867 -->
+                                                    <p class="eleAtomicNo">22</p>
+                                                    <p class="eleSymbole">Ti</p>
+                                                    <p class="eleName">Titanium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 23,Vanadium,V,50.942 -->
+                                                    <p class="eleAtomicNo">23</p>
+                                                    <p class="eleSymbole">V</p>
+                                                    <p class="eleName">Vanadium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 24,Chromium,Cr,51.996 -->
+                                                    <p class="eleAtomicNo">24</p>
+                                                    <p class="eleSymbole">Cr</p>
+                                                    <p class="eleName">Chromium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 25,Manganese,Mn,54.938 -->
+                                                    <p class="eleAtomicNo">25</p>
+                                                    <p class="eleSymbole">Mn</p>
+                                                    <p class="eleName">Manganese</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 26,Iron,Fe,55.845 -->
+                                                    <p class="eleAtomicNo">26</p>
+                                                    <p class="eleSymbole">Fe</p>
+                                                    <p class="eleName">Iron</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 27,Cobalt,Co,58.933 -->
+                                                    <p class="eleAtomicNo">27</p>
+                                                    <p class="eleSymbole">Co</p>
+                                                    <p class="eleName">Cobalt</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 28,Nickel,Ni,58.693 -->
+                                                    <p class="eleAtomicNo">28</p>
+                                                    <p class="eleSymbole">Ni</p>
+                                                    <p class="eleName">Nickel</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 29,Copper,Cu,63.546 -->
+                                                    <p class="eleAtomicNo">29</p>
+                                                    <p class="eleSymbole">Cu</p>
+                                                    <p class="eleName">Copper</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 30,Zinc,Zn,65.38 -->
+                                                    <p class="eleAtomicNo">30</p>
+                                                    <p class="eleSymbole">Zn</p>
+                                                    <p class="eleName">Zinc</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 39,Yttrium,Y,88.906 -->
+                                                    <p class="eleAtomicNo">39</p>
+                                                    <p class="eleSymbole">Y</p>
+                                                    <p class="eleName">Yttrium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 40,Zirconium,Zr,91.224 -->
+                                                    <p class="eleAtomicNo">40</p>
+                                                    <p class="eleSymbole">Zr</p>
+                                                    <p class="eleName">Zirconium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 41,Niobium,Nb,92.906 -->
+                                                    <p class="eleAtomicNo">41</p>
+                                                    <p class="eleSymbole">Nb</p>
+                                                    <p class="eleName">Niobium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 42,Molybdenum,Mo,95.96 -->
+                                                    <p class="eleAtomicNo">42</p>
+                                                    <p class="eleSymbole">Mo</p>
+                                                    <p class="eleName">Molybdenum</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 43,Technetium,Tc,98,55 -->
+                                                    <p class="eleAtomicNo">43</p>
+                                                    <p class="eleSymbole">Tc</p>
+                                                    <p class="eleName">Technetium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 44,Ruthenium,Ru,101.07 -->
+                                                    <p class="eleAtomicNo">44</p>
+                                                    <p class="eleSymbole">Ru</p>
+                                                    <p class="eleName">Ruthenium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 45,Rhodium,Rh,102.906 -->
+                                                    <p class="eleAtomicNo">45</p>
+                                                    <p class="eleSymbole">Rh</p>
+                                                    <p class="eleName">Rhodium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 46,Palladium,Pd,106.42 -->
+                                                    <p class="eleAtomicNo">46</p>
+                                                    <p class="eleSymbole">Pd</p>
+                                                    <p class="eleName">Palladium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 47,Silver,Ag,107.868 -->
+                                                    <p class="eleAtomicNo">47</p>
+                                                    <p class="eleSymbole">Ag</p>
+                                                    <p class="eleName">Silver</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 48,Cadmium,Cd,112.411 -->
+                                                    <p class="eleAtomicNo">48</p>
+                                                    <p class="eleSymbole">Cd</p>
+                                                    <p class="eleName">Cadmium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alignCenter fullHeight">
+                                                    <p>57-71</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 72,Hafnium,Hf,178.49 -->
+                                                    <p class="eleAtomicNo">72</p>
+                                                    <p class="eleSymbole">Hf</p>
+                                                    <p class="eleName">Hafnium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 73,Tantalum,Ta,180.948 -->
+                                                    <p class="eleAtomicNo">73</p>
+                                                    <p class="eleSymbole">Ta</p>
+                                                    <p class="eleName">Tantalum</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 74,Wolfram,W,183.84 -->
+                                                    <p class="eleAtomicNo">74</p>
+                                                    <p class="eleSymbole">W</p>
+                                                    <p class="eleName">Wolfram</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 75,Rhenium,Re,186.207 -->
+                                                    <p class="eleAtomicNo">75</p>
+                                                    <p class="eleSymbole">Re</p>
+                                                    <p class="eleName">Rhenium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 76,Osmium,Os,190.23 -->
+                                                    <p class="eleAtomicNo">76</p>
+                                                    <p class="eleSymbole">Os</p>
+                                                    <p class="eleName">Osmium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 77,Iridium,Ir,192.217 -->
+                                                    <p class="eleAtomicNo">77</p>
+                                                    <p class="eleSymbole">Ir</p>
+                                                    <p class="eleName">Iridium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 78,Platinum,Pt,195.084 -->
+                                                    <p class="eleAtomicNo">78</p>
+                                                    <p class="eleSymbole">Pt</p>
+                                                    <p class="eleName">Platinum</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 79,Gold,Au,196.967 -->
+                                                    <p class="eleAtomicNo">79</p>
+                                                    <p class="eleSymbole">Au</p>
+                                                    <p class="eleName">Gold</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 80,Mercury,Hg,200.59 -->
+                                                    <p class="eleAtomicNo">80</p>
+                                                    <p class="eleSymbole">Hg</p>
+                                                    <p class="eleName">Mercury</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell alignCenter fullHeight">
+                                                    <p style="text-align: center;">88-103</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 104,Rutherfordium,Rf,261 -->
+                                                    <p class="eleAtomicNo">104</p>
+                                                    <p class="eleSymbole">Rf</p>
+                                                    <p class="eleName">Rutherfordium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 105,Dubnium,Db,262 -->
+                                                    <p class="eleAtomicNo">105</p>
+                                                    <p class="eleSymbole">Db</p>
+                                                    <p class="eleName">Dubnium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 106,Seaborgium,Sg,266 -->
+                                                    <p class="eleAtomicNo">106</p>
+                                                    <p class="eleSymbole">Sg</p>
+                                                    <p class="eleName">Seaborgium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 107,Bohrium,Bh,264 -->
+                                                    <p class="eleAtomicNo">107</p>
+                                                    <p class="eleSymbole">Bh</p>
+                                                    <p class="eleName">Bohrium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell tm">
+                                                    <!-- 108,Hassium,Hs,267 -->
+                                                    <p class="eleAtomicNo">108</p>
+                                                    <p class="eleSymbole">Hs</p>
+                                                    <p class="eleName">Hassium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 109,Meitnerium,Mt,268 -->
+                                                    <p class="eleAtomicNo">109</p>
+                                                    <p class="eleSymbole">Mt</p>
+                                                    <p class="eleName">Meitnerium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 110,Darmstadtium ,Ds ,271 -->
+                                                    <p class="eleAtomicNo">110</p>
+                                                    <p class="eleSymbole">Ds</p>
+                                                    <p class="eleName">Darmstadtium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 111,Roentgenium ,Rg ,272 -->
+                                                    <p class="eleAtomicNo">111</p>
+                                                    <p class="eleSymbole">Rg</p>
+                                                    <p class="eleName">Roentgenium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 112,Copernicium ,Cn ,285 -->
+                                                    <p class="eleAtomicNo">112</p>
+                                                    <p class="eleSymbole">Cn</p>
+                                                    <p class="eleName">Copernicium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="t4Block">
+                                <div class="eleCategories">
+                                    <table id="eleCatTable">
+                                        <tr>
+                                            <td class="ng">Nobel gas</td>
+                                            <td class="rnm">Reactive non metals</td>
+                                            <td class="mtl">Metalloids</td>
+                                        </tr>
+                                        <tr>
+                                            <td class=ptm>Post transition metals</td>
+                                            <td class="tm">Transition metals</td>
+                                            <td class="ltd">Lanthanoids</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="act">Actinide</td>
+                                            <td class="ake">Akaline earth</td>
+                                            <td class="alk">Alkali metals</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <table class="t4">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 5,Boron,B,10.811 -->
+                                                    <p class="eleAtomicNo">5</p>
+                                                    <p class="eleSymbole">B</p>
+                                                    <p class="eleName">Boron</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 6,Carbon,C,12.011 -->
+                                                    <p class="eleAtomicNo">6</p>
+                                                    <p class="eleSymbole">C</p>
+                                                    <p class="eleName">Carbon</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 7,Nitrogen,N,14.007 -->
+                                                    <p class="eleAtomicNo">7</p>
+                                                    <p class="eleSymbole">N</p>
+                                                    <p class="eleName">Nitrogen</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 8,Oxygen,O,15.999 -->
+                                                    <p class="eleAtomicNo">8</p>
+                                                    <p class="eleSymbole">O</p>
+                                                    <p class="eleName">Oxygen</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 9,Fluorine,F,18.998 -->
+                                                    <p class="eleAtomicNo">9</p>
+                                                    <p class="eleSymbole">F</p>
+                                                    <p class="eleName">Fluorine</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 13,Aluminum,Al,26.982 -->
+                                                    <p class="eleAtomicNo">13</p>
+                                                    <p class="eleSymbole">Al</p>
+                                                    <p class="eleName">Aluminum</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell mtl">
+                                                    <!-- 14,Silicon,Si,28.086 -->
+                                                    <p class="eleAtomicNo">14</p>
+                                                    <p class="eleSymbole">Si</p>
+                                                    <p class="eleName">Silicon</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 15,Phosphorus,P,30.974 -->
+                                                    <p class="eleAtomicNo">15</p>
+                                                    <p class="eleSymbole">P</p>
+                                                    <p class="eleName">Phosphorus</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 16,Sulfur,S,32.065 -->
+                                                    <p class="eleAtomicNo">16</p>
+                                                    <p class="eleSymbole">S</p>
+                                                    <p class="eleName">Sulfur</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 17,Chlorine,Cl,35.453 -->
+                                                    <p class="eleAtomicNo">17</p>
+                                                    <p class="eleSymbole">Cl</p>
+                                                    <p class="eleName">Chlorine</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 31,Gallium,Ga,69.723 -->
+                                                    <p class="eleAtomicNo">31</p>
+                                                    <p class="eleSymbole">Ga</p>
+                                                    <p class="eleName">Gallium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell mtl">
+                                                    <!-- 32,Germanium,Ge,72.64 -->
+                                                    <p class="eleAtomicNo">32</p>
+                                                    <p class="eleSymbole">Ge</p>
+                                                    <p class="eleName">Germanium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell mtl">
+                                                    <!-- 33,Arsenic,As,74.922 -->
+                                                    <p class="eleAtomicNo">33</p>
+                                                    <p class="eleSymbole">As</p>
+                                                    <p class="eleName">Arsenic</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 34,Selenium,Se,78.96 -->
+                                                    <p class="eleAtomicNo">34</p>
+                                                    <p class="eleSymbole">Se</p>
+                                                    <p class="eleName">Selenium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 35,Bromine,Br,79.904 -->
+                                                    <p class="eleAtomicNo">35</p>
+                                                    <p class="eleSymbole">Br</p>
+                                                    <p class="eleName">Bromine</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 49,Indium,In,114.818 -->
+                                                    <p class="eleAtomicNo">49</p>
+                                                    <p class="eleSymbole">In</p>
+                                                    <p class="eleName">Indium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 50,Tin,Sn,118.71 -->
+                                                    <p class="eleAtomicNo">50</p>
+                                                    <p class="eleSymbole">Sn</p>
+                                                    <p class="eleName">Tin</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell mtl">
+                                                    <!-- 51,Antimony,Sb,121.76 -->
+                                                    <p class="eleAtomicNo">51</p>
+                                                    <p class="eleSymbole">Sb</p>
+                                                    <p class="eleName">Antimony</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell mtl">
+                                                    <!-- 52,Tellurium,Te,127.6 -->
+                                                    <p class="eleAtomicNo">52</p>
+                                                    <p class="eleSymbole">Te</p>
+                                                    <p class="eleName">Tellurium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell rnm">
+                                                    <!-- 53,Iodine,I,126.904 -->
+                                                    <p class="eleAtomicNo">53</p>
+                                                    <p class="eleSymbole">I</p>
+                                                    <p class="eleName">Iodine</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 81,Thallium,Tl,204.383 -->
+                                                    <p class="eleAtomicNo">81</p>
+                                                    <p class="eleSymbole">Tl</p>
+                                                    <p class="eleName">Thallium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 82,Lead,Pb,207.2 -->
+                                                    <p class="eleAtomicNo">82</p>
+                                                    <p class="eleSymbole">Pb</p>
+                                                    <p class="eleName">Lead</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 83,Bismuth,Bi,208.98 -->
+                                                    <p class="eleAtomicNo">83</p>
+                                                    <p class="eleSymbole">Bi</p>
+                                                    <p class="eleName">Bismuth</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ptm">
+                                                    <!-- 84,Polonium,Po,210 -->
+                                                    <p class="eleAtomicNo">84</p>
+                                                    <p class="eleSymbole">Po</p>
+                                                    <p class="eleName">Polonium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell mtl">
+                                                    <!-- 85,Astatine,At,210 -->
+                                                    <p class="eleAtomicNo">85</p>
+                                                    <p class="eleSymbole">At</p>
+                                                    <p class="eleName">Astatine</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 113,Nihonium,Nh,284 -->
+                                                    <p class="eleAtomicNo">113</p>
+                                                    <p class="eleSymbole">Nh</p>
+                                                    <p class="eleName">Nihonium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 114,Flerovium,Fl,289 -->
+                                                    <p class="eleAtomicNo">114</p>
+                                                    <p class="eleSymbole">Fl</p>
+                                                    <p class="eleName">Flerovium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 115,Moscovium,Mc,288 -->
+                                                    <p class="eleAtomicNo">115</p>
+                                                    <p class="eleSymbole">Mc</p>
+                                                    <p class="eleName">Moscovium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 116,Livermorium,Lv,292 -->
+                                                    <p class="eleAtomicNo">116</p>
+                                                    <p class="eleSymbole">Lv</p>
+                                                    <p class="eleName">Livermorium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 117,Tennessine,Ts,295 -->
+                                                    <p class="eleAtomicNo">117</p>
+                                                    <p class="eleSymbole">Ts</p>
+                                                    <p class="eleName">Tennessine</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="t5">  
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 2,Helium,He,4.002 -->
+                                                    <p class="eleAtomicNo">2</p>
+                                                    <p class="eleSymbole">He</p>
+                                                    <p class="eleName">Helium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 10,Neon,Ne,20.18 -->
+                                                    <p class="eleAtomicNo">10</p>
+                                                    <p class="eleSymbole">Ne</p>
+                                                    <p class="eleName">Neon</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 18,Argon,Ar,39.948 -->
+                                                    <p class="eleAtomicNo">18</p>
+                                                    <p class="eleSymbole">Ar</p>
+                                                    <p class="eleName">Argon</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 36,Krypton,Kr,83.798 -->
+                                                    <p class="eleAtomicNo">36</p>
+                                                    <p class="eleSymbole">Kr</p>
+                                                    <p class="eleName">Krypton</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 54,Xenon,Xe,131.293 -->
+                                                    <p class="eleAtomicNo">54</p>
+                                                    <p class="eleSymbole">Xe</p>
+                                                    <p class="eleName">Xenon</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ng">
+                                                    <!-- 86,Radon,Rn,222 -->
+                                                    <p class="eleAtomicNo">86</p>
+                                                    <p class="eleSymbole">Rn</p>
+                                                    <p class="eleName">Radon</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ukn">
+                                                    <!-- 118,Oganesson,Og,294 -->
+                                                    <p class="eleAtomicNo">118</p>
+                                                    <p class="eleSymbole">Og</p>
+                                                    <p class="eleName">Oganesson</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="textBlock"></div>
+                        <div class="lowerTable">
+                            <table class="t6">
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 57,Lanthanum,La,138.905 -->
+                                                <p class="eleAtomicNo">57</p>
+                                                <p class="eleSymbole">La</p>
+                                                <p class="eleName">Lanthanum</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd" style="width:47px;">
+                                                <!-- 58,Cerium,Ce,140.116 -->
+                                                <p class="eleAtomicNo">58</p>
+                                                <p class="eleSymbole">Ce</p>
+                                                <p class="eleName">Cerium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 59,Praseodymium,Pr,140.908 -->
+                                                <p class="eleAtomicNo">59</p>
+                                                <p class="eleSymbole">Pr</p>
+                                                <p class="eleName">Praseodymium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 60,Neodymium,Nd,144.242 -->
+                                                <p class="eleAtomicNo">60</p>
+                                                <p class="eleSymbole">Nd</p>
+                                                <p class="eleName">Neodymium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 61,Promethium,Pm,145 -->
+                                                <p class="eleAtomicNo">61</p>
+                                                <p class="eleSymbole">Pm</p>
+                                                <p class="eleName">Promethium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 62,Samarium,Sm,150.36 -->
+                                                <p class="eleAtomicNo">62</p>
+                                                <p class="eleSymbole">Sm</p>
+                                                <p class="eleName">Samarium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 63,Europium,Eu,151.964 -->
+                                                <p class="eleAtomicNo">63</p>
+                                                <p class="eleSymbole">Eu</p>
+                                                <p class="eleName">Europium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 64,Gadolinium,Gd,157.25 -->
+                                                <p class="eleAtomicNo">64</p>
+                                                <p class="eleSymbole">Gd</p>
+                                                <p class="eleName">Gadolinium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 65,Terbium,Tb,158.925 -->
+                                                <p class="eleAtomicNo">65</p>
+                                                <p class="eleSymbole">Tb</p>
+                                                <p class="eleName">Terbium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 66,Dysprosium,Dy,162.5 -->
+                                                <p class="eleAtomicNo">66</p>
+                                                <p class="eleSymbole">Dy</p>
+                                                <p class="eleName">Dysprosium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 67,Holmium,Ho,164.93 -->
+                                                <p class="eleAtomicNo">67</p>
+                                                <p class="eleSymbole">Ho</p>
+                                                <p class="eleName">Holmium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd" style="width:47px;">
+                                                <!-- 68,Erbium,Er,167.259 -->
+                                                <p class="eleAtomicNo">68</p>
+                                                <p class="eleSymbole">Er</p>
+                                                <p class="eleName">Erbium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd">
+                                                <!-- 69,Thulium,Tm,168.934 -->
+                                                <p class="eleAtomicNo">69</p>
+                                                <p class="eleSymbole">Tm</p>
+                                                <p class="eleName">Thulium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell ltd" style="width:47px;">
+                                                <!-- 70,Ytterbium,Yb,173.054 -->
+                                                <p class="eleAtomicNo">70</p>
+                                                <p class="eleSymbole">Yb</p>
+                                                <p class="eleName">Ytterbium</p>
+                                            </div>
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="eleCell ltd">
+                                                    <!-- 71,Lutetium,Lu,174.967 -->
+                                                    <p class="eleAtomicNo">71</p>
+                                                    <p class="eleSymbole">Lu</p>
+                                                    <p class="eleName">Lutetium</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 89,Actinium,Ac,227 -->
+                                                <p class="eleAtomicNo">89</p>
+                                                <p class="eleSymbole">Ac</p>
+                                                <p class="eleName">Actinium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 90,Thorium,Th,232.038 -->
+                                                <p class="eleAtomicNo">90</p>
+                                                <p class="eleSymbole">Th</p>
+                                                <p class="eleName">Thorium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 91,Protactinium,Pa,231.036 -->
+                                                <p class="eleAtomicNo">91</p>
+                                                <p class="eleSymbole">Pa</p>
+                                                <p class="eleName">Protactinium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 92,Uranium,U,238.029 -->
+                                                <p class="eleAtomicNo">92</p>
+                                                <p class="eleSymbole">U</p>
+                                                <p class="eleName">Uranium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 93,Neptunium,Np,237 -->
+                                                <p class="eleAtomicNo">93</p>
+                                                <p class="eleSymbole">Np</p>
+                                                <p class="eleName">Neptunium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 94,Plutonium,Pu,244 -->
+                                                <p class="eleAtomicNo">94</p>
+                                                <p class="eleSymbole">Pu</p>
+                                                <p class="eleName">Plutonium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 95,Americium,Am,243 -->
+                                                <p class="eleAtomicNo">95</p>
+                                                <p class="eleSymbole">Am</p>
+                                                <p class="eleName">Americium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 96,Curium,Cm,247 -->
+                                                <p class="eleAtomicNo">96</p>
+                                                <p class="eleSymbole">Cm</p>
+                                                <p class="eleName">Curium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 97,Berkelium,Bk,247 -->
+                                                <p class="eleAtomicNo">97</p>
+                                                <p class="eleSymbole">Bk</p>
+                                                <p class="eleName">Berkelium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 98,Californium,Cf,251 -->
+                                                <p class="eleAtomicNo">98</p>
+                                                <p class="eleSymbole">Cf</p>
+                                                <p class="eleName">Californium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 99,Einsteinium,Es,252 -->
+                                                <p class="eleAtomicNo">99</p>
+                                                <p class="eleSymbole">Es</p>
+                                                <p class="eleName">Einsteinium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 100,Fermium,Fm,257 -->
+                                                <p class="eleAtomicNo">100</p>
+                                                <p class="eleSymbole">Fm</p>
+                                                <p class="eleName">Fermium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 101,Mendelevium,Md,258 -->
+                                                <p class="eleAtomicNo">101</p>
+                                                <p class="eleSymbole">Md</p>
+                                                <p class="eleName">Mendelevium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 102,Nobelium,No,259 -->
+                                                <p class="eleAtomicNo">102</p>
+                                                <p class="eleSymbole">No</p>
+                                                <p class="eleName">Nobelium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <div class="eleCell act">
+                                                <!-- 103,Lawrencium,Lr,262 -->
+                                                <p class="eleAtomicNo">103</p>
+                                                <p class="eleSymbole">Lr</p>
+                                                <p class="eleName">Lawrencium</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+            </section>
+
+            <section id="contactUs">
+
+            </section>
+
+            <footer>
+
+            </footer>
+
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

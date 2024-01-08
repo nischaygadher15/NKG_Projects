@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>survey-form.freecodecamp.rocks</title>
+        <meta charser="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name-label">
+                        Name <input type="text" id="name-label" placeholder="Enter your name" required>    
+                    </label>
+                    <label for="email-label">
+                        Email <input type="email" id="email-label" placeholder="Enter your email " required>    
+                    </label>
+                    <label for="number-label">
+                        Age (optional) <input type="number" id="number-label" min="13" max="120"  placeholder="Enter your age" required>    
+                    </label>
+
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="student">Full Time Job</option>
+                        <option value="student">Full Time Learner</option>
+                        <option value="student">Prefer not to say</option>
+                        <option value="student">Other</option>
+                    </select>
+
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label id="rdButton"><input type="radio" name="rcmd" value="definitely" > Definitely</label>
+                    <label id="rdButton"><input type="radio" name="rcmd" value="may-be" > May be</label>
+                    <label id="rdButton"><input type="radio" name="rcmd" value="not-sure" > Not sure</label>
+                    
+                    <p>What is your favourite feature of freeCodeCamp?</p>
+                    <select name="feature" id="dropdown">
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="Open-source">Open Source</option>
+                    </select>
+                    
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <label id="CkBox"><input type="checkbox" value="font-end-projects"> Front-end Projects</label>
+                    <label id="CkBox"><input type="checkbox" value="back-end-projects"> Back-end Projects</label>
+                    <label id="CkBox"><input type="checkbox" value="data-visualization"> Data Visualization</label>
+                    <label id="CkBox"><input type="checkbox" value="challenges"> Challenges</label>
+                    <label id="CkBox"><input type="checkbox" value="open-source-community"> Open Source Community</label>
+                    <label id="CkBox"><input type="checkbox" value="gitter-help-rooms"> Gitter help rooms</label>
+                    <label id="CkBox"><input type="checkbox" value="videos"> Videos</label>
+                    <label id="CkBox"><input type="checkbox" value="city-meetps"> City Meetps</label>
+                    <label id="CkBox"><input type="checkbox" value="wiki"> Wiki</label>
+                    <label id="CkBox"><input type="checkbox" value="forum"> Forum</label>
+                    <label id="CkBox"><input type="checkbox" value="additional-courses"> Additional Courses</label>
+
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comment" id="comment" cols="10" rows="10">Enter your comment here</textarea>
+
+                    <input type="submit" value="Submit" id="submit">
+                </fieldset>
+            </form>
+        </div>  
+    </body>
+</html> 
