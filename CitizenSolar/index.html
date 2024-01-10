@@ -15,8 +15,19 @@
                 <li>Franchise</li>
                 <li>Distributor</li>
             </ul>
-            <div class="searchLogoBlock">
-                <img src="./Images/icons8-search.svg" alt="Search Logo" id="searchLogo">
+            <div class="searchBar">
+                <div class="searchBarBlock">
+                    <form>
+                        <input type="search" placeholder="Enter Keyword..." id="searchText">
+                    </form>
+                    <img src="./Images/icons8-search-white.svg" alt="Search Logo" id="searchBigLogo">
+                </div>
+                <div class="searchLogoBlock">
+                    <img src="./Images/icons8-search-green.svg" alt="Search Logo" id="searchLogo">
+                </div>
+                <div class="crossLogoBlock">
+                    <img src="./Images/close-cross-svgrepo-com.svg" alt="Search Logo" id="crossLogo">   
+                </div>
             </div>
         </div>
         <div class="lowerHeader">
@@ -89,7 +100,7 @@
         </div>
     </header>
 
-    <section id="content">
+    <section id="slideShow">
         <div class="textBlock">
             <div class="text">
                 <p id="uPara">Citizen solar</p>
@@ -102,17 +113,53 @@
             </div>
         </div>
     </section>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+    <section id="solarPanelFeatures">
+        <div class = "featureTile1">
+            <!-- <img src="./Images/08_blurb_bg01.jpg" alt="" class = "featureTileBg"> -->
+            <img src="./Images/04_Flash-Series.png" alt="Flash Series Panel Photo" class = "panelPhoto panel1">
+            <div class="featuresDetails pDetail1">
+                <h3 class="featureHead">FLASH SERIES</h3>
+                <p class="panelName">(POLYCRYSTALLINE & POLY PERC)</p>
+                <p class="panelFeatures">
+                    Strong & Robust design for greater reliability The Flash Series 60/72 cells with heat-strengthened ARC Glass gives higher performance and power yields even in harsh environments with intense humidity and irradiance levels. It is built to withstand harsh-elements and is less susceptible to micro-cracking, module warping, UV aging and corrosion from sand, acid, alkali and salt mist
+                </p>
+            </div>
+        </div>
+        <div class = "featureTile2">
+            <!-- <img src="./Images/05_blurb_bg02.jpg" alt="" class = "featureTileBg"> -->
+            <img src="./Images/03_Arrow-Series.png" alt="Arrow Series Panel Photo" class = "panelPhoto panel2">
+            <div class="featuresDetails pDetail2">
+                <h3 class="featureHead">ARROW SERIES</h3>
+                <p class="panelName">(MONOCRYSTALLINE & MONO PERC)</p>
+                <p class="panelFeatures">
+                    The Super Performer The Arrow series monocrystalline module with 60/72 cells offers high-output performance for ground-mount installations. Available with industry-leading 1500V IEC rating, Arrow series is perfect for solar projects with limited space area, as its top-end efficiency and high power density is built to maximize energy output in limited space while withstanding challenging environmental conditions.
+                </p>
+            </div>
+        </div>
+        <div class = "featureTile3">
+            <!-- <img src="./Images/13_blurb_bg03.jpg" alt="" class = "featureTileBg"> -->
+            <img src="./Images/15_Enlight-Series-1.png" alt="Enlight Series Panel Photo" class = "panelPhoto panel3">
+            <div class="featuresDetails pDetail3">
+                <h3 class="featureHead">ENLIGHT SERIES</h3>
+                <p class="panelName">(BIPV)</p>
+                <p class="panelFeatures">
+                    The beautiful and stylish Enlight 60/72 cell module offers reliable and durable energy generation for your home or business. The transparent design looks beautiful on Residential Rooftops & Corporate offices rooftops. Combined with its industry-leading 25-year linear power warranty, the Enlight series enhanced performance leads to greater and quicker energy savings and faster ROI than standard solar panels
+                </p>
+            </div>
+        </div>
+        <div class = "featureTile4">
+            <!-- <img src="./Images/20_blurb_bg04.jpg" alt="" class = "featureTileBg"> -->
+            <img src="./Images/12_Newlight-Series-1.png" alt="New Light Panel Photo" class = "panelPhoto panel4">
+            <div class="featuresDetails pDetail4">
+                <h3 class="featureHead">NEWLIGHT SERIES</h3>
+                <p class="panelName">(TWIN PEAK)</p>
+                <p class="panelFeatures">
+                    Reduced levelized cost of energy with improved performance Newlight series is designed for commercial and utility-scale solar projects to obtain significant system savings. The Half-cut design allows it work during lower temperature, which could improve energy generation per watt. The unique cell strings design makes each cell string could work independently which can significantly reduce the energy loss due to the mismatch problem caused by shading between modules or others.
+                </p>
+            </div>
+        </div>
     </section>
+    <script src="./Js/script.js"></script>
 </body>
 </html>

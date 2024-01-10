@@ -46,7 +46,57 @@ header
     /* border: 1px solid blue; */
 }
 
-.searchLogoBlock
+.searchBar
+{
+    width: 16%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid firebrick; */
+}
+
+.searchBarBlock
+{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    /* border: 1px solid yellow; */
+}
+
+#searchText
+{
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+    outline: none;
+    background-color: transparent;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+#searchBigLogo
+{
+    transform: scale(0.5);
+    /* border: 1px solid firebrick; */
+}
+
+#searchBigLogo:hover
+{
+    transform: scale(0.65);
+}
+
+
+.searchLogoBlock, .crossLogoBlock
 {
     width: 25px;
     height: 80%;
@@ -56,22 +106,54 @@ header
     display:flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.searchLogoBlock:hover
+{
+    background-color: rgb(0, 0, 255, 0.5);
 }
 
 #searchLogo
 {
-    transform: scale(0.4);
+    transform: scale(0.25);
 }
+
+
+.crossLogoBlock
+{
+    position: relative;
+    left: -40px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.crossLogoBlock:hover
+{
+    background-color: rgb(0, 0, 255, 0.5);
+}
+
+#crossLogo
+{
+    transform: scale(0.01);
+}
+
 
 .lowerHeader
 {
     width: 100%;
     height: 18vh;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    z-index: 1; 
 }
+
 
 #citizenLogo
 {
@@ -92,14 +174,6 @@ header
     align-items: center;
 }
 
-/* #lHeadList li
-{
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 .emptyBlock
 {
@@ -201,7 +275,7 @@ header
     height: 240px;
 }
 
-#content
+#slideShow
 {
     width: 100%;
     height: 90vh;
@@ -267,7 +341,7 @@ header
 {
     height: 40px;
     width: 150px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
     border-radius: 20px ;
     background-color: #fff;
     color:#000;
@@ -275,6 +349,11 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#findMore:hover
+{
+    background-color: rgba(83, 179, 28, 0.8);
 }
 
 #brochure
@@ -289,4 +368,149 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#brochure:hover
+{
+    background-color: rgb(75, 73, 73); 
+}
+
+/* solar panel Feature section start here */
+
+#solarPanelFeatures
+{
+    width: 100%;
+    height: 160vh;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.featureTile1
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background: url("/Images/08_blurb_bg01.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+.featureTile2
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background: url("/Images/05_blurb_bg02.jpg") no-repeat;
+    background-size: cover;
+}
+
+.featureTile3
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background: url("/Images/13_blurb_bg03.jpg") no-repeat;
+    background-size: cover;
+}
+
+.featureTile4 
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background: url("/Images/20_blurb_bg04.jpg") no-repeat;
+    background-size: cover;
+}
+
+.panelPhoto
+{
+    min-width: 90%;
+    height: 45%;
+    border: 1px solid yellow;
+}
+
+.featuresDetails
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.featureHead
+{
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.panelName
+{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.panelFeatures
+{
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.featureTile1, .featureTile2, .featureTile3, .featureTile4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel1, .panel2, .panel3, .panel4, .pDetail1, .pDetail2, .pDetail3, .pDetail4
+{
+    position: relative;
+    /* top: -15px; */
+}
+
+.featureTile1:hover .panel1 
+{
+    top: -15px;
+}
+
+.featureTile1:hover .pDetail1 
+{
+    top: 15px;
+}
+
+.featureTile2:hover .panel2 
+{
+    top: -15px;
+}
+
+.featureTile2:hover .pDetail2 
+{
+    top: 15px;
+}
+
+.featureTile3:hover .panel3
+{
+    top: -15px;
+}
+
+.featureTile3:hover .pDetail3 
+{
+    top: 15px;
+}
+
+.featureTile4:hover .panel4 
+{
+    top: -15px;
+}
+
+.featureTile4:hover .pDetail4
+{
+    top: 15px;
 }
