@@ -647,6 +647,150 @@ header
 }
 
 
+#bestProducer
+{
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(128, 128, 128, 0.1);
+    /* border: 1px solid firebrick; */
+}
+
+.bestProducerBlock
+{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.headingBox
+{
+    display: flex;
+    justify-content: center;
+}
+
+#bestProducerHead
+{
+    font-size: 30px;
+    color: rgb(83, 179, 28);    
+}
+
+#bestProducerHead::after
+{
+    content:"";
+    width: 20%;
+    margin-top: 20px;
+    border: 1.5px solid rgb(83, 179, 28);
+    display: block;
+    position: relative;
+    left: 200px;
+}
+
+.bestProducerText
+{
+    font-size: 18px;
+    color: black;
+    line-height: 25px;
+    margin: 25px 0;
+}
+
+
+#quickLinks
+{
+    width: 100%;
+    height: 90vh;
+    border: 1px solid firebrick;
+    background: url('/Images/09_cta02.jpg') no-repeat left;
+    background-size: cover;
+    display: flex;
+    font-size: 17px;
+}
+
+.makeInIndia
+{
+    width: 25%;
+    height: 100%;
+    border: 1px solid blueviolet;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+#ftCitizenLogo
+{
+    width: auto;
+    height: auto;
+    margin: 30px 0 10px 0;
+}
+
+.mkIndiaText
+{
+    margin: 10px 0 20px 0;
+    line-height: 25px;
+}
+
+.copyRightText
+{
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+#makeIndiaLogo
+{
+    width: 180px;
+    height: 90px;
+}
+
+.linkTableBlock
+{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkTable
+{
+    width: 100%;
+    height: 70%;
+}
+
+#linkTable a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#linkTable a:hover
+{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+th
+{
+    height: 50px;
+    width: 33.33%;
+    font-size: 18px;
+    text-align: left;
+}
+
+tr
+{
+    height: 28px;
+}
+
+.threeRows
+{
+    border: 1px solid firebrick;
+}
+
+
+
 
 /* #countingNum
 {
