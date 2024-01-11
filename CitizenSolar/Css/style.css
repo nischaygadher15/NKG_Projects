@@ -144,7 +144,7 @@ header
     width: 100%;
     height: 18vh;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,7 +279,8 @@ header
 {
     width: 100%;
     height: 90vh;
-    background: url(../Images/33_banner-2.jpg) no-repeat top right;
+    background: url('/Images/33_banner-2.jpg') no-repeat;
+    background-size: cover;
     /* border: 1px solid brown; */
     display: flex;
     flex-direction: column;
@@ -381,7 +382,7 @@ header
 {
     width: 100%;
     height: 160vh;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -390,7 +391,7 @@ header
 {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: url("/Images/08_blurb_bg01.jpg") no-repeat;
     background-size: cover;
 }
@@ -400,7 +401,7 @@ header
 {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: url("/Images/05_blurb_bg02.jpg") no-repeat;
     background-size: cover;
 }
@@ -409,7 +410,7 @@ header
 {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: url("/Images/13_blurb_bg03.jpg") no-repeat;
     background-size: cover;
 }
@@ -418,7 +419,7 @@ header
 {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: url("/Images/20_blurb_bg04.jpg") no-repeat;
     background-size: cover;
 }
@@ -427,7 +428,7 @@ header
 {
     min-width: 90%;
     height: 45%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .featuresDetails
@@ -514,3 +515,142 @@ header
 {
     top: 15px;
 }
+
+
+#aboutUsSection
+{
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffff;
+    /* border: 1px solid blue; */
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutUsBlock
+{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#aboutUsHead
+{
+    font-size: 60px;
+    color: rgb(83, 179, 28);
+    margin-bottom: 20px;
+}
+
+#aboutUsHead::after
+{
+    content:"";
+    width: 8vw;
+    display: block;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(83, 179, 28);
+}
+
+.aboutUsText
+{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#readMore
+{
+    width: 170px;
+    height: 60px;
+    background-color: rgb(83, 179, 28);
+    border: 1px solid rgb(83, 179, 28);
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#readMore:hover
+{
+    background-color: #fcb900;
+    border-color: #fcb900;
+}
+
+#readMore svg
+{
+    margin-left: 10px;
+}
+
+#citizenSolar
+{
+    width: 100%;
+    height: 75vh;
+    background: url('/Images/09_cta02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.citizenSolarBlock
+{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid firebrick;  */
+    padding: 65px;
+}
+
+
+#citizenSolarHead
+{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#citizenSolarHead::after
+{
+    content:"";
+    width: 8vw;
+    display: block;
+    margin-top: 20px;
+    border-bottom: 2px solid rgb(83, 179, 28);
+}
+
+.citizenSolarText
+{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#whyCitizenBtn
+{
+    width: 160px;
+    height: 60px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    color: rgb(83, 179, 28);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whyCitizenBtn:hover
+{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+
+
+/* #countingNum
+{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid violet;
+} */
