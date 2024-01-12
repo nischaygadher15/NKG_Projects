@@ -172,6 +172,7 @@ header
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* border: 1px solid darkmagenta;  */
 }
 
 
@@ -182,6 +183,15 @@ header
     margin-top: 1px;
     background-color: rgb(83, 179, 28);
     transition: 0.5s;
+}
+
+#lHeadList li
+{
+    /* border: 1px solid blue;  */
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #lHeadList li:hover
@@ -198,30 +208,27 @@ header
 .popDownList
 {
     width: 230px;
+    height: auto;
     background-color:rgb(83, 179, 28);
     list-style: none;
     color: #fff;
     font-size: 14px;
-    /* border: 1px solid yellow; */
     opacity: 0;
     position: absolute;
-    left: 637px;
     top: 150px;
     visibility: hidden;
     z-index: 1;
     transition: all 0.5s ease;
 }
 
-#lHeadList li:hover .popDownList
+
+#aboutUs:hover .aboutUsList, #media:hover .mediaList, #products:hover .productsList, #services:hover .servicesList
 {
     opacity: 1;
     visibility: visible;
-}
-
-#aboutUs:hover .aboutUsList
-{
     top: 140px;
 }
+
 
 #popDownBlock
 {
@@ -363,7 +370,7 @@ header
     width: 200px;
     /* border: 1px solid green; */
     border-radius: 20px ;
-    background-color: rgba(83, 179, 28, 0.8);
+    background-color: rgba(83, 179, 28, 0.9);
     color:#fff;
     text-decoration: none;
     display: flex;
@@ -470,50 +477,50 @@ header
     align-items: center;
 }
 
-.panel1, .panel2, .panel3, .panel4, .pDetail1, .pDetail2, .pDetail3, .pDetail4
-{
-    position: relative;
-    /* top: -15px; */
-}
 
 .featureTile1:hover .panel1 
 {
-    top: -15px;
+    transform: translateY(-15px);
 }
 
 .featureTile1:hover .pDetail1 
 {
-    top: 15px;
+    transform: translateY(15px);
 }
 
 .featureTile2:hover .panel2 
 {
-    top: -15px;
+    transform: translateY(-15px);
 }
 
 .featureTile2:hover .pDetail2 
 {
-    top: 15px;
+    transform: translateY(15px);
 }
 
 .featureTile3:hover .panel3
 {
-    top: -15px;
+    transform: translateY(-15px);
 }
 
 .featureTile3:hover .pDetail3 
 {
-    top: 15px;
+    transform: translateY(15px);
 }
 
 .featureTile4:hover .panel4 
 {
-    top: -15px;
+    transform: translateY(-15px);
 }
 
 .featureTile4:hover .pDetail4
 {
-    top: 15px;
+    transform: translateY(15px);
+}
+
+.panel1, .panel2, .panel3, .panel4, .pDetail1, .pDetail2, .pDetail3, .pDetail4
+{
+    transition: transform 500ms;
 }
 
 
@@ -698,7 +705,7 @@ header
 {
     width: 100%;
     height: 90vh;
-    border: 1px solid firebrick;
+    /* border: 1px solid firebrick; */
     background: url('/Images/09_cta02.jpg') no-repeat left;
     background-size: cover;
     display: flex;
@@ -707,10 +714,11 @@ header
 
 .makeInIndia
 {
-    width: 25%;
+    width: 27%;
     height: 100%;
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     padding-left: 15px;
+    padding-right: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -747,7 +755,7 @@ header
 
 .linkTableBlock
 {
-    width: 75%;
+    width: 73%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -775,7 +783,7 @@ th
 {
     height: 50px;
     width: 33.33%;
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -784,12 +792,34 @@ tr
     height: 28px;
 }
 
-.threeRows
+/* .threeRows
 {
     border: 1px solid firebrick;
+} */
+
+.heading3
+{
+    font-size: 18px;
 }
 
 
+.socialMediaIcons
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#facebook:hover
+{
+    fill:#000000;
+}
+
+.copyRightText a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 
 /* #countingNum
