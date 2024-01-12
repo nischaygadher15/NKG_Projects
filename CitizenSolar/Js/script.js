@@ -1,3 +1,7 @@
+
+
+// Upper Header Search Bar Hide/Show Feature Script
+
 let searchLogo = document.getElementsByClassName("searchLogoBlock")[0];
 let crossLogo = document.getElementsByClassName("crossLogoBlock")[0];
 let searchBar = document.getElementsByClassName("searchBarBlock")[0];
@@ -24,18 +28,24 @@ function hideCross()
     searchBar.style.opacity = "0";
 }
 
-let sectionSlideShow = document.getElementById("slideShow");
+
+// Sticky Nav Bar After Scroll Pass Header Section
+
+const lowerHeadInt = document.querySelector(".lowerHeader");
+const navBar = document.querySelector(".lowerNavbar");
+const logo = document.getElementById('citizenLogo');
 const observer = new IntersectionObserver(changeNavbar,
     {
-        root: null,
-        rootMargin: "",
-        threshold: 0
+        root:null,
+        rootMargin: "20px",
+        threshold: 1
     });
+
 
 function changeNavbar(entries)
 {
-    // alert("hi");
-    console.log(entries[0]);
+    const ent = entries[0];
+    
 }
 
-observer.observe(sectionSlideShow);
+observer.observe(lowerHeadInt);

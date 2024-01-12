@@ -138,29 +138,28 @@ header
     transform: scale(0.01);
 }
 
-
+/*Sticky nav bar change point*/
 .lowerHeader
 {
     width: 100%;
     height: 18vh;
     background-color: rgba(255, 255, 255, 0.8);
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     z-index: 1; 
 }
 
-
+/*Sticky nav bar change point*/
 #citizenLogo
 {
     width: auto;
     height: auto;
     margin-left: 10px;
+    /* display:none; */
 }
+
 
 #lHeadList
 {
@@ -176,6 +175,15 @@ header
 }
 
 
+.home, .media, .aboutUs, .capability, .products, .services, .faqs, .contactUs
+{
+    /* border: 1px solid blue;  */
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .emptyBlock
 {
     width:0%;
@@ -185,30 +193,10 @@ header
     transition: 0.5s;
 }
 
-#lHeadList li
-{
-    /* border: 1px solid blue;  */
-    height: 18vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#lHeadList li:hover
-{
-    color: rgb(83, 179, 28);
-}
-
-#lHeadList li:hover .emptyBlock
-{
-    width: 100%;
-}
-
-
+/*Sticky nav bar change point*/
 .popDownList
 {
     width: 230px;
-    height: auto;
     background-color:rgb(83, 179, 28);
     list-style: none;
     color: #fff;
@@ -221,16 +209,7 @@ header
     transition: all 0.5s ease;
 }
 
-
-#aboutUs:hover .aboutUsList, #media:hover .mediaList, #products:hover .productsList, #services:hover .servicesList
-{
-    opacity: 1;
-    visibility: visible;
-    top: 140px;
-}
-
-
-#popDownBlock
+.popDownBlock
 {
     width: 100%;
     height: 35px;
@@ -241,7 +220,7 @@ header
     align-items: center;
 }
 
-#popDownBlock2
+.popDownBlock2
 {
     width: 100%;
     height: 40px;
@@ -252,12 +231,32 @@ header
     align-items: center;
 }
 
-#popDownBlock:hover
+
+.lHeadLi:hover
+{
+    color: rgb(83, 179, 28);
+}
+
+.lHeadLi:hover .emptyBlock
+{
+    width: 100%;
+}
+
+/*Sticky nav bar change point*/
+.aboutUs:hover .aboutUsList, .media:hover .mediaList, .products:hover .productsList, .services:hover .servicesList
+{
+    opacity: 1;
+    visibility: visible;
+    top: 140px;
+}
+
+
+.popDownBlock:hover
 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#popDownBlock2:hover
+.popDownBlock2:hover
 {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -280,6 +279,22 @@ header
 .servicesList
 {
     height: 240px;
+}
+
+.stickyhead
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* border: 1px solid blue; */
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #slideShow
