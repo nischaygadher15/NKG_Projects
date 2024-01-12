@@ -30,22 +30,38 @@ function hideCross()
 
 
 // Sticky Nav Bar After Scroll Pass Header Section
-
-const lowerHeadInt = document.querySelector(".lowerHeader");
+const lowerHeadInt = document.querySelector("#interSection");
 const navBar = document.querySelector(".lowerNavbar");
 const logo = document.getElementById('citizenLogo');
 const observer = new IntersectionObserver(changeNavbar,
     {
         root:null,
-        rootMargin: "20px",
-        threshold: 1
+        rootMargin: "100px",
+        threshold: 0
     });
-
 
 function changeNavbar(entries)
 {
     const ent = entries[0];
-    
+
+    if(ent.isIntersecting == false)
+    {
+        console.log(ent.isIntersecting);
+        navBar.classList.remove('lowerHeader');
+        navBar.classList.add('stickyhead');
+        logo.style.display = 'none';
+        alert(navBar.classList);
+    }
+    else
+    {
+        console.log(ent.isIntersecting);
+        navBar.classList.add('lowerHeader');
+        navBar.classList.remove('.stickyhead');
+        navBar.classList.remove('.stickyhead');
+        logo.style.display= "inline-block";
+        console.log(navBar.classList);
+        alert(navBar.classList);
+    }
 }
 
 observer.observe(lowerHeadInt);
