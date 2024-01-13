@@ -1,4 +1,6 @@
-@import url(https://db.onlinewebfonts.com/c/0376a58122a881d16a294512d3c947b1?family=Proxima+Nova+Regular);
+  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
 
 *
 {
@@ -12,10 +14,21 @@ body
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    font-family: "Proxima Nova Regular", sans-serif;
-    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     color: #fff;
     position: relative;
+}
+
+.intersection
+{
+    width: 100%;
+    height: 23vh;
+    border: 1px solid blue;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;    
 }
 
 header
@@ -30,7 +43,7 @@ header
     width: 100%;
     height: 5vh;
     background-color: rgb(83, 179, 28);
-    font-size: 14px;
+    font-size: 13px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -144,14 +157,33 @@ header
 {
     width: 100%;
     height: 18vh;
-    position: absolute;
-    top: 5vh;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1; 
+    /* border: 1px solid blue; */
+}
+
+
+.stickyNavbar
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* border: 1px solid blue; */
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    /* transition: visibility 100ms ease-in-out; */
 }
 
 /*Sticky nav bar change point*/
@@ -168,7 +200,7 @@ header
     width: 60%;
     height: 100%;
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -202,10 +234,25 @@ header
     background-color:rgb(83, 179, 28);
     list-style: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     opacity: 0;
     position: absolute;
     top: 150px;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.popDownListSticky
+{
+    width: 230px;
+    background-color:rgb(83, 179, 28);
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0;
+    position: absolute;
+    top: 11vh;
     visibility: hidden;
     z-index: 1;
     transition: all 0.5s ease;
@@ -244,14 +291,6 @@ header
     width: 100%;
 }
 
-/*Sticky nav bar change point*/
-.aboutUs:hover .aboutUsList, .media:hover .mediaList, .products:hover .productsList, .services:hover .servicesList
-{
-    opacity: 1;
-    visibility: visible;
-    top: 140px;
-}
-
 
 .popDownBlock:hover
 {
@@ -263,41 +302,42 @@ header
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.aboutUsList
+.aboutUsList, .aboutUsListSk
 {
     height: 175px;
 }
 
-.mediaList
+.mediaList, .mediaListSk
 {
     height: 240px;
 }
 
-.productsList
+.productsList, .productsListSk
 {
     height: 210px;
 }
 
-.servicesList
+.servicesList, .servicesListSk
 {
     height: 240px;
 }
 
-.stickyhead
+/*Sticky nav bar change point*/
+.aboutUs:hover .aboutUsList, .media:hover .mediaList, .products:hover .productsList, .services:hover .servicesList
 {
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    /* border: 1px solid blue; */
-    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; 
-    position: fixed;
-    top: 0;
-    left: 0;
+    opacity: 1;
+    visibility: visible;
+    top: 140px;
 }
+
+.aboutUs:hover .aboutUsListSk, .media:hover .mediaListSk, .products:hover .productsListSk, .services:hover .servicesListSk
+{
+    opacity: 1;
+    visibility: visible;
+    top: 10vh;
+}
+
+
 
 #slideShow
 {
@@ -341,14 +381,15 @@ header
 
 #mPara
 {
-    font-size: 30px;
-    font-weight:100;
+    font-size: 28px;
+    font-weight:300;
     margin-top: 10px;
 }
 
 #bPara
 {
     margin-top: 10px;
+    font-size: 15px;
 }
 
 .linkBox
@@ -468,22 +509,23 @@ header
 
 .featureHead
 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 60px;
     margin-bottom: 15px;
 }
 
 .panelName
 {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
 .panelFeatures
 {
     width: 90%;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+    line-height: 22px;
 }
 
 .featureTile1, .featureTile2, .featureTile3, .featureTile4
@@ -565,7 +607,8 @@ header
 
 #aboutUsHead
 {
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: 600;
     color: rgb(83, 179, 28);
     margin-bottom: 20px;
 }
@@ -581,7 +624,8 @@ header
 
 .aboutUsText
 {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 22px;
     margin-bottom: 25px;
 }
 
@@ -629,7 +673,7 @@ header
 
 #citizenSolarHead
 {
-    font-size: 40px;
+    font-size: 38px;
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -645,7 +689,8 @@ header
 
 .citizenSolarText
 {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 22px;
     margin-bottom: 25px;
 }
 
@@ -674,7 +719,7 @@ header
 #bestProducer
 {
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     background-color: rgba(128, 128, 128, 0.1);
     /* border: 1px solid firebrick; */
 }
@@ -694,7 +739,7 @@ header
 
 #bestProducerHead
 {
-    font-size: 30px;
+    font-size: 28px;
     color: rgb(83, 179, 28);    
 }
 
@@ -711,9 +756,9 @@ header
 
 .bestProducerText
 {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
-    line-height: 25px;
+    line-height: 23px;
     margin: 25px 0;
 }
 
@@ -726,7 +771,7 @@ header
     background: url('/Images/09_cta02.jpg') no-repeat left;
     background-size: cover;
     display: flex;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .makeInIndia
@@ -758,7 +803,7 @@ header
 
 .copyRightText
 {
-    font-size: 14px;
+    font-size: 13px;
     position: absolute;
     bottom: 20px;
     left: 15px;
@@ -800,7 +845,7 @@ th
 {
     height: 50px;
     width: 33.33%;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -809,10 +854,6 @@ tr
     height: 28px;
 }
 
-/* .threeRows
-{
-    border: 1px solid firebrick;
-} */
 
 .heading3
 {
