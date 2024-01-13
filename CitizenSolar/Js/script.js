@@ -53,3 +53,9 @@ function changeNavbar(entries)
 }
 
 observer.observe(lowerHeadInt);
+
+
+//Animated Up Counting Numnbers
+
+
+

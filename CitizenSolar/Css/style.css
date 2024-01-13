@@ -24,7 +24,7 @@ body
 {
     width: 100%;
     height: 23vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background: transparent;
     position: absolute;
     top: 0;
@@ -415,6 +415,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 #findMore:hover
@@ -434,6 +435,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 #brochure:hover
@@ -641,6 +643,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 #readMore:hover
@@ -707,6 +710,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 #whyCitizenBtn:hover
@@ -880,9 +884,49 @@ tr
 }
 
 
-/* #countingNum
+#countingNum
 {
     width: 100%;
-    height: 50vh;
-    border: 1px solid violet;
-} */
+    height: 60vh;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upCounterTile
+{
+    width: 300px;
+    height: 100%;
+    /* border: 1px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upCounter
+{
+    width: 200px;
+    height: 200px;
+    border: 9px solid rgb(83, 179, 28);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counterNum
+{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(83, 179, 28);
+}
+
+.counterCap
+{
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(83, 179, 28);
+    padding-top: 25px;
+}
+
