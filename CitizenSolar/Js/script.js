@@ -36,7 +36,7 @@ const navBar = document.querySelector(".stickyNavbar");
 const observer = new IntersectionObserver(changeNavbar,
     {
         root:null,
-        rootMargin: "-20px",
+        rootMargin: "-80px",
         threshold: 0
     });
 

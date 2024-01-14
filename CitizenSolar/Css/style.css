@@ -42,7 +42,7 @@ header
 {
     width: 100%;
     height: 5vh;
-    background-color: rgb(83, 179, 28);
+    background-color: #87bf38;
     font-size: 13px;
     display:flex;
     justify-content: space-between;
@@ -223,7 +223,7 @@ header
     width:0%;
     height: 2px;
     margin-top: 1px;
-    background-color: rgb(83, 179, 28);
+    background-color: #87bf38;
     transition: 0.5s;
 }
 
@@ -231,7 +231,7 @@ header
 .popDownList
 {
     width: 230px;
-    background-color:rgb(83, 179, 28);
+    background-color:#87bf38;
     list-style: none;
     color: #fff;
     font-size: 13px;
@@ -246,7 +246,7 @@ header
 .popDownListSticky
 {
     width: 230px;
-    background-color:rgb(83, 179, 28);
+    background-color:#87bf38;
     list-style: none;
     color: #fff;
     font-size: 13px;
@@ -283,7 +283,7 @@ header
 
 .lHeadLi:hover
 {
-    color: rgb(83, 179, 28);
+    color: #87bf38;
 }
 
 .lHeadLi:hover .emptyBlock
@@ -611,7 +611,7 @@ header
 {
     font-size: 50px;
     font-weight: 600;
-    color: rgb(83, 179, 28);
+    color: #87bf38;
     margin-bottom: 20px;
 }
 
@@ -621,7 +621,7 @@ header
     width: 8vw;
     display: block;
     margin-top: 10px;
-    border-bottom: 2px solid rgb(83, 179, 28);
+    border-bottom: 2px solid #87bf38;
 }
 
 .aboutUsText
@@ -635,8 +635,8 @@ header
 {
     width: 170px;
     height: 60px;
-    background-color: rgb(83, 179, 28);
-    border: 1px solid rgb(83, 179, 28);
+    background-color: #87bf38;
+    border: 1px solid #87bf38;
     border-radius: 30px;
     color: #ffffff;
     text-decoration: none;
@@ -687,7 +687,7 @@ header
     width: 8vw;
     display: block;
     margin-top: 20px;
-    border-bottom: 2px solid rgb(83, 179, 28);
+    border-bottom: 2px solid #87bf38;
 }
 
 .citizenSolarText
@@ -705,7 +705,7 @@ header
     background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 30px;
-    color: rgb(83, 179, 28);
+    color: #87bf38;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -744,7 +744,7 @@ header
 #bestProducerHead
 {
     font-size: 28px;
-    color: rgb(83, 179, 28);    
+    color: #87bf38;    
 }
 
 #bestProducerHead::after
@@ -752,7 +752,7 @@ header
     content:"";
     width: 20%;
     margin-top: 20px;
-    border: 1.5px solid rgb(83, 179, 28);
+    border: 1.5px solid #87bf38;
     display: block;
     position: relative;
     left: 200px;
@@ -908,7 +908,7 @@ tr
 {
     width: 200px;
     height: 200px;
-    border: 9px solid rgb(83, 179, 28);
+    border: 9px solid #87bf38;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -919,14 +919,76 @@ tr
 {
     font-size: 40px;
     font-weight: bolder;
-    color: rgb(83, 179, 28);
+    color: #87bf38;
 }
 
 .counterCap
 {
     font-size: 16px;
     font-weight: bolder;
-    color: rgb(83, 179, 28);
+    color: #87bf38;
     padding-top: 25px;
 }
 
+
+#certifications
+{
+    width: 100%;
+    height: 60vh;
+    background-color: #87bf38; /*#87bf38*/
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificateHead
+{
+    font-size: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificateHead:after
+{
+    content:"";
+    width: 8vw;
+    display: block;
+    margin-top: 18px;
+    border-bottom: 2px solid rgba(83, 179, 28);
+}
+
+.certificateSlideshow
+{
+    width: 95%;
+    height: 170px;
+    margin-top: 30px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftSlide, #rightSlide
+{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%; 
+        font-size: 18px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#leftSlide
+{
+    position: relative;
+    left: 0px;
+}
