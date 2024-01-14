@@ -1005,6 +1005,7 @@ tr
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 }
 
 #leftSlideBtn
@@ -1017,6 +1018,11 @@ tr
 {
     position: absolute;
     right: 30px;
+}
+
+#leftSlideBtn:hover, #rightSlideBtn:hover
+{
+    background-color: rgba(0, 0, 0,0.7);
 }
 
 

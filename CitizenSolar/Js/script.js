@@ -141,7 +141,7 @@ function startCounter()
 
 let certificate = document.querySelectorAll(".certificate");
 const array1 = [0,1,2,3,4];
-var i = 0, len = array1.length, a = 3, b = 4, c = 0, d = 1, e = 2, flag = 0;
+var i = 0, len = array1.length, a = 3, b = 4, c = 0, d = 1, e = 2, flag = 0, cont = 0;
 let leftBtn = document.getElementById("leftSlideBtn");
 let rightBtn = document.getElementById("rightSlideBtn");
 leftBtn.addEventListener("click", previousSlide);
@@ -235,9 +235,13 @@ function slideVarDec()
 
 function previousSlide()
 {   
-    flag
+    flag = -1;
 }
 
+function nextSlide()
+{
+    flag = 1;
+}
 
 function slideShow()
 {
@@ -349,12 +353,44 @@ function slideShow()
                 certificate[e].style.transition = "all 500ms ease-out";
                 e++;
             }
-        
-        
+            
+            
             function timer()
             {
+                if(flag == -1)
+                {
+                    slideVarDec();
+                    console.log("slideVarDec")
+                    flag = 0;
+                    cont = 0;
+                    slideShow();
+                }
+                else
+                {
+                    if (flag == 0)
+                    {
+                        if(cont < 40)
+                        {
+                            console.log(cont);
+                            cont++;
+                            setTimeout(() => {timer()},100);
+                        }
+                        else
+                        {
+                            cont = 0;
+                            slideShow();
+                        }
 
-                setTimeout(() => {timer()},10);
+                    }
+                    else
+                    {
+                        flag = 0;
+                        cont = 0;
+                        console.log("flag = 1");
+                        slideShow();
+                    }
+                }
+
             }
             timer();
 
