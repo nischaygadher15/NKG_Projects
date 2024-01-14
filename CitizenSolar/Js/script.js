@@ -373,7 +373,7 @@ function slideShow()
                         {
                             console.log(cont);
                             cont++;
-                            setTimeout(() => {timer()},100);
+                            setTimeout(() => {timer()},100);    
                         }
                         else
                         {
