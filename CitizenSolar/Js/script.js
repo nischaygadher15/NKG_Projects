@@ -140,40 +140,228 @@ function startCounter()
 //  Certifications Slideshow
 
 let certificate = document.querySelectorAll(".certificate");
+const array1 = [0,1,2,3,4];
+var i = 0, len = array1.length, a = 3, b = 4, c = 0, d = 1, e = 2, flag = 0;
+let leftBtn = document.getElementById("leftSlideBtn");
+let rightBtn = document.getElementById("rightSlideBtn");
+leftBtn.addEventListener("click", previousSlide);
+rightBtn.addEventListener("click", nextSlide);
 
-function slideShow()
+function slideVarDec()
 {
-    //Hide Slide Left Side
-    certificate[1].style.position = "absolute";
-    certificate[1].style.left = "-30%";
-    
-    // left side 
-    certificate[0].style.position = "relative";
-    certificate[0].style.left = "5%";
-    certificate[0].style.transform = "scale(0.7)";
-    certificate[0].style.opacity = "0.6";
+    if (a < 2)
+    {
+        if (a == 1)
+        {
+            a = 4;
+        }
+        else
+        {
+            a = 3;
+        }
+    }
+    else
+    {
+        a -= 2;
+    }
 
-    // Center
-    certificate[i].style.position = "relative";
-    certificate[i].style.left = "40%";
 
-    // right side
-    certificate[1].style.position = "absolute";
-    certificate[1].style.right = "5%";
-    certificate[1].style.transform = "scale(0.7)";
-    certificate[1].style.opacity = "0.6";
+    if (b < 2)
+    {
+        if (b == 1)
+        {
+            b = 4;
+        }
+        else
+        {
+            b = 3;
+        }
+    }
+    else
+    {
+        b -= 2;
+    }
 
-    //Hide Slide Right Side
-    certificate[0].style.position = "absolute";
-    certificate[0].style.left = "107%";
+    if (c < 2)
+    {
+        if (c == 1)
+        {
+            c = 4;
+        }
+        else
+        {
+            c = 3;
+        }
+    }
+    else
+    {
+        c -= 2;
+    }
 
+
+    if (d < 2)
+    {
+        if (d == 1)
+        {
+            d = 4;
+        }
+        else
+        {
+            d = 3;
+        }
+    }
+    else
+    {
+        d -= 2;
+    }
+
+
+    if (e < 2)
+    {
+        if (e == 1)
+        {
+            e = 4;
+        }
+        else
+        {
+            e = 3;
+        }
+    }
+    else
+    {
+        e -= 2;
+    }
+}
+
+function previousSlide()
+{   
+    flag
 }
 
 
+function slideShow()
+{
+    if (true)
+    {
+        if (a < len)
+            {
+                //Hide Slide Left Side
+                certificate[a].style.position = "absolute";
+                certificate[a].style.left = "-40%";
+                certificate[a].style.opacity = "0";
+                certificate[a].style.transition = "all 500ms ease-out";
+                a++;
+            }
+        else
+            {
+                a = 0;
+                //Hide Slide Left Side
+                certificate[a].style.position = "absolute";
+                certificate[a].style.left = "-40%";
+                certificate[a].style.opacity = "0";
+                certificate[a].style.transition = "all 500ms ease-out";
+                a++;
+            }
+
+        if (b < len)
+            {
+                // left side 
+                certificate[b].style.position = "absolute";
+                certificate[b].style.left = "5%";
+                certificate[b].style.transform = "scale(0.7)";
+                certificate[b].style.opacity = "0.6";
+                certificate[b].style.transition = "all 500ms ease-out";
+                b++;
+            }
+        else
+            {
+                b = 0;
+                // left side 
+                certificate[b].style.position = "absolute";
+                certificate[b].style.left = "5%";
+                certificate[b].style.transform = "scale(0.7)";
+                certificate[b].style.opacity = "0.6";
+                certificate[b].style.transition = "all 500ms ease-out";
+                b++;
+            }
+
+        if (c < len)
+            {
+                // Center
+                certificate[c].style.position = "absolute";
+                certificate[c].style.left = "40%";
+                certificate[c].style.transform = "scale(1)";
+                certificate[c].style.opacity = "1";
+                certificate[c].style.transition = "all 500ms ease-out";
+                c++;
+            }
+        else
+            {
+                c = 0;
+                // Center
+                certificate[c].style.position = "absolute";
+                certificate[c].style.left = "40%";
+                certificate[c].style.transform = "scale(1)";
+                certificate[c].style.opacity = "1";
+                certificate[c].style.transition = "all 500ms ease-out";
+                c++;
+            }
+
+        if (d < len)
+            {
+                // right side
+                certificate[d].style.position = "absolute";
+                certificate[d].style.left = "75%";
+                certificate[d].style.transform = "scale(0.7)";
+                certificate[d].style.opacity = "0.6";
+                certificate[d].style.transition = "all 500ms ease-out";
+                d++;
+            }
+        else
+            {
+                d = 0;
+                // right side
+                certificate[d].style.position = "absolute";
+                certificate[d].style.left = "75%";
+                certificate[d].style.transform = "scale(0.7)";
+                certificate[d].style.opacity = "0.6";
+                certificate[d].style.transition = "all 500ms ease-out";
+                d++;
+            }
+
+
+        if (e < len)
+            {
+                //Hide Slide Right Side
+                certificate[e].style.position = "absolute";
+                certificate[e].style.left = "110%";
+                certificate[e].style.opacity = "0";
+                certificate[e].style.transition = "all 500ms ease-out";
+                e++;
+            }
+        else
+            {
+                e = 0;
+                //Hide Slide Right Side
+                certificate[e].style.position = "absolute";
+                certificate[e].style.left = "110%";
+                certificate[e].style.opacity = "0";
+                certificate[e].style.transition = "all 500ms ease-out";
+                e++;
+            }
+        
+        
+            function timer()
+            {
+
+                setTimeout(() => {timer()},10);
+            }
+            timer();
+
+    }
+}
+
 slideShow();
-
-
-// console.log(certificate);
 
 
 
