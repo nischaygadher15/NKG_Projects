@@ -85,7 +85,6 @@ function triggerF(entries)
     let ent1 = entries[0];
     if (ent1.isIntersecting == false)
     {
-        console.log("ent1:",ent1.isIntersecting);
         startCounter();
     }
 }
@@ -95,7 +94,6 @@ function triggerT(entries)
     let ent2 = entries[0];
     if (ent2.isIntersecting == true)
     {
-        console.log("ent2:",ent2.isIntersecting);
         startCounter();
     }
 }
@@ -139,7 +137,43 @@ function startCounter()
 
 
 
+//  Certifications Slideshow
 
+let certificate = document.querySelectorAll(".certificate");
+
+function slideShow()
+{
+    //Hide Slide Left Side
+    certificate[1].style.position = "absolute";
+    certificate[1].style.left = "-30%";
+    
+    // left side 
+    certificate[0].style.position = "relative";
+    certificate[0].style.left = "5%";
+    certificate[0].style.transform = "scale(0.7)";
+    certificate[0].style.opacity = "0.6";
+
+    // Center
+    certificate[i].style.position = "relative";
+    certificate[i].style.left = "40%";
+
+    // right side
+    certificate[1].style.position = "absolute";
+    certificate[1].style.right = "5%";
+    certificate[1].style.transform = "scale(0.7)";
+    certificate[1].style.opacity = "0.6";
+
+    //Hide Slide Right Side
+    certificate[0].style.position = "absolute";
+    certificate[0].style.left = "107%";
+
+}
+
+
+slideShow();
+
+
+// console.log(certificate);
 
 
 

@@ -292,12 +292,15 @@
     <section id="certifications">
         <h2 class="certificateHead">Certifications</h2>
         <div class="certificateSlideshow">
-            <button id="leftSlide"><i class="fa-solid fa-less-than"></i></button>
-            <img src="./Images/19_14001.jpg" alt="" class="certificate">
-            <img src="./Images/02_iso-9001.jpg" alt="" class="certificate">
-            <img src="./Images/11_nsic.jpg" alt="" class="certificate">
-            <img src="./Images/07_ohsas-1.jpg" alt="" class="certificate">
-            <button id="rightSlide"><i class="fa-solid fa-greater-than"></i></button>
+            <button id="leftSlide" onclick="nextSlide()"><i class="fa-solid fa-less-than"></i></button>
+            <div class="certificateSlide">
+                <img src="./Images/19_14001.jpg" alt="" class="certificate">
+                <img src="./Images/02_iso-9001.jpg" alt="" class="certificate">
+                <img src="./Images/11_nsic.jpg" alt="" class="certificate">
+                <img src="./Images/07_ohsas-1.jpg" alt="" class="certificate">
+                <div class="certificate"></div>
+            </div>
+            <button id="rightSlide" onclick="previousSlide()"><i class="fa-solid fa-greater-than"></i></button>
         </div>
     </section>
 
