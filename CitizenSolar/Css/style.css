@@ -180,7 +180,7 @@ header
     align-items: center;
     z-index: 1; 
     position: fixed;
-    top: 0;
+    top: 0vh;
     left: 0;
     z-index: 1;
     visibility: hidden;
@@ -889,7 +889,7 @@ tr
 {
     width: 100%;
     height: 60vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -937,7 +937,7 @@ tr
     width: 100%;
     height: 60vh;
     background-color: #87bf38; /*#87bf38*/
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1030,12 +1030,44 @@ tr
 #news
 {
     width: 100%;
-    height: 140vh;
-    border: 1px solid blue;
+    height: 150vh;
+    /* border: 2px solid firebrick; */
     /* overflow: hidden; */
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+#newsHead
+{
+    height: 180px;
+    width: 100%;
+    font-size: 55px;
+    /* border: 2px solid violet; */
+    color: #87bf38;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsHead:after
+{
+    content:"";
+    width: 8vw;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(83, 179, 28);
+}
+
+.newSlideBlock
+{
+    width: 100%;
+    height: 88%;
+    /* border: 2px solid blue; */
 }
 
 #leftSlideNewsBtn, #rightSlideNewsBtn
@@ -1074,14 +1106,13 @@ tr
 
 .newsSlide
 {
-    width: 30%;
-    height: 100%;
-    border: 1px solid hotpink;
+    width: 31%;
+    height: 80%;
+    /* border: 1px solid hotpink; */
     float: left;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: -35%;
+    opacity: 0;
 }
 
 .newsImg
@@ -1153,7 +1184,7 @@ tr
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 
 .readMoreLink:hover

@@ -400,11 +400,11 @@ function slideShow()
 slideShow();
 
 
+
 // News Article Slide Show
 
 let newsSlide = document.querySelectorAll(".newsSlide");
-const array2 = [0,1,2,3,4,5,6,7,8,9];
-var len1 = array2.length, a1 = 3, b1 = 4, c1 = 0, d1 = 1, e1 = 2, flag1 = 0, cont1 = 0;
+var len1 = 10, a1 = 8, b1 = 9, c1 = 0, d1 = 1, e1 = 2, flag1 = 0, cont1 = 0;
 let leftBtn1 = document.getElementById("leftSlideNewsBtn");
 let rightBtn1 = document.getElementById("rightSlideNewsBtn");
 leftBtn1.addEventListener("click", previousNewsSlide);
@@ -416,11 +416,11 @@ function slideVarDec1()
     {
         if (a1 == 1)
         {
-            a1 = 4;
+            a1 = 9;
         }
         else
         {
-            a1 = 3;
+            a1 = 8;
         }
     }
     else
@@ -433,11 +433,11 @@ function slideVarDec1()
     {
         if (b1 == 1)
         {
-            b1 = 4;
+            b1 = 9;
         }
         else
         {
-            b1 = 3;
+            b1 = 8;
         }
     }
     else
@@ -449,11 +449,11 @@ function slideVarDec1()
     {
         if (c1 == 1)
         {
-            c1 = 4;
+            c1 = 9;
         }
         else
         {
-            c1 = 3;
+            c1 = 8;
         }
     }
     else
@@ -466,11 +466,11 @@ function slideVarDec1()
     {
         if (d1 == 1)
         {
-            d1 = 4;
+            d1 = 9;
         }
         else
         {
-            d1 = 3;
+            d1 = 8;
         }
     }
     else
@@ -483,11 +483,11 @@ function slideVarDec1()
     {
         if (e1 == 1)
         {
-            e1 = 4;
+            e1 = 9;
         }
         else
         {
-            e1 = 3;
+            e1 = 8;
         }
     }
     else
@@ -513,6 +513,7 @@ function NewsSlideShow()
         if (a1 < len1)
             {
                 //Hide Slide Left Side
+                console.log('newsSlide',a1);
                 newsSlide[a1].style.position = "absolute";
                 newsSlide[a1].style.left = "-40%";
                 newsSlide[a1].style.opacity = "0";
@@ -523,6 +524,7 @@ function NewsSlideShow()
             {
                 a1 = 0;
                 //Hide Slide Left Side
+                console.log('newsSlide',a1);
                 newsSlide[a1].style.position = "absolute";
                 newsSlide[a1].style.left = "-40%";
                 newsSlide[a1].style.opacity = "0";
@@ -533,10 +535,10 @@ function NewsSlideShow()
         if (b1 < len1)
             {
                 // left side 
+                console.log('newsSlide',b1);
                 newsSlide[b1].style.position = "absolute";
-                newsSlide[b1].style.left = "5%";
-                // newsSlide[b1].style.transform = "scale(0.7)";
-                // newsSlide[b1].style.opacity = "0.6";
+                newsSlide[b1].style.left = "2%";
+                newsSlide[b1].style.opacity = "1";
                 newsSlide[b1].style.transition = "all 500ms ease-out";
                 b1++;
             }
@@ -544,10 +546,10 @@ function NewsSlideShow()
             {
                 b1 = 0;
                 // left side 
+                console.log('newsSlide',b1);
                 newsSlide[b1].style.position = "absolute";
-                newsSlide[b1].style.left = "5%";
-                // newsSlide[b1].style.transform = "scale(0.7)";
-                // newsSlide[b1].style.opacity = "0.6";
+                newsSlide[b1].style.left = "2%";
+                newsSlide[b1].style.opacity = "1";
                 newsSlide[b1].style.transition = "all 500ms ease-out";
                 b1++;
             }
@@ -555,10 +557,10 @@ function NewsSlideShow()
         if (c1 < len1)
             {
                 // Center
+                console.log('newsSlide',c1);
                 newsSlide[c1].style.position = "absolute";
-                newsSlide[c1].style.left = "35%";
-                // newsSlide[c1].style.transform = "scale(1)";
-                // newsSlide[c1].style.opacity = "1";
+                newsSlide[c1].style.left = "34.5%";
+                newsSlide[c1].style.opacity = "1";
                 newsSlide[c1].style.transition = "all 500ms ease-out";
                 c1++;
             }
@@ -566,10 +568,10 @@ function NewsSlideShow()
             {
                 c1 = 0;
                 // Center
+                console.log('newsSlide',c1);
                 newsSlide[c1].style.position = "absolute";
-                newsSlide[c1].style.left = "35%";
-                // newsSlide[c1].style.transform = "scale(1)";
-                // newsSlide[c1].style.opacity = "1";
+                newsSlide[c1].style.left = "34.5%";
+                newsSlide[c1].style.opacity = "1";
                 newsSlide[c1].style.transition = "all 500ms ease-out";
                 c1++;
             }
@@ -577,10 +579,10 @@ function NewsSlideShow()
         if (d1 < len1)
             {
                 // right side
+                console.log('newsSlide',d1);
                 newsSlide[d1].style.position = "absolute";
-                newsSlide[d1].style.left = "70%";
-                // newsSlide[d1].style.transform = "scale(0.7)";
-                // newsSlide[d1].style.opacity = "0.6";
+                newsSlide[d1].style.left = "67%";
+                newsSlide[d1].style.opacity = "1";
                 newsSlide[d1].style.transition = "all 500ms ease-out";
                 d1++;
             }
@@ -588,10 +590,10 @@ function NewsSlideShow()
             {
                 d1 = 0;
                 // right side
+                console.log('newsSlide',d1);
                 newsSlide[d1].style.position = "absolute";
-                newsSlide[d1].style.left = "70%";
-                // newsSlide[d1].style.transform = "scale(0.7)";
-                // newsSlide[d1].style.opacity = "0.6";
+                newsSlide[d1].style.left = "67%";
+                newsSlide[d1].style.opacity = "1";
                 newsSlide[d1].style.transition = "all 500ms ease-out";
                 d1++;
             }
@@ -599,7 +601,8 @@ function NewsSlideShow()
 
         if (e1 < len1)
             {
-                //Hide Slide Right Side
+                //Hide Slide Right 
+                console.log('newsSlide',e1);
                 newsSlide[e1].style.position = "absolute";
                 newsSlide[e1].style.left = "110%";
                 newsSlide[e1].style.opacity = "0";
@@ -610,6 +613,7 @@ function NewsSlideShow()
             {
                 e1 = 0;
                 //Hide Slide Right Side
+                console.log('newsSlide',e1);
                 newsSlide[e1].style.position = "absolute";
                 newsSlide[e1].style.left = "110%";
                 newsSlide[e1].style.opacity = "0";
@@ -632,7 +636,7 @@ function NewsSlideShow()
                 {
                     if (flag1 == 0)
                     {
-                        if(cont1 < 40)
+                        if(cont1 < 50)
                         {
                             console.log(cont1);
                             cont1++;
