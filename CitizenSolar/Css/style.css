@@ -63,24 +63,29 @@ header
 
 .searchBar
 {
-    width: 16%;
+    width: 21%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     /* border: 1px solid firebrick; */
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+    padding-right: 15px
 }
 
 .searchBarBlock
 {
-    width: 90%;
+    width: 95%;
     height: 100%;
+    position: relative;
+    top: 0;
+    right: -25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     visibility: hidden;
     opacity: 0;
     /* border: 1px solid yellow; */
+    z-index: 1;
 }
 
 #searchText
@@ -102,7 +107,7 @@ header
 #searchBigLogo
 {
     transform: scale(0.5);
-    /* border: 1px solid firebrick; */
+    /* border: 1px solid black; */
 }
 
 #searchBigLogo:hover
@@ -111,22 +116,24 @@ header
 }
 
 
-.searchLogoBlock, .crossLogoBlock
+.searchLogoBlock
 {
     width: 25px;
     height: 80%;
     border-radius: 50%;
-    margin-right: 15px;
+    /* margin-left: 15px; */
     background-color: #fff;
     display:flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer;    
+    /* visibility: hidden;
+    opacity: 0; */
 }
 
 .searchLogoBlock:hover
 {
-    background-color: rgb(0, 0, 255, 0.5);
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 #searchLogo
@@ -138,20 +145,23 @@ header
 .crossLogoBlock
 {
     position: relative;
-    left: -40px;
-    visibility: hidden;
-    opacity: 0;
+    /* left: -40px; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* display: none; */
+    width: 25px;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
 }
 
 .crossLogoBlock:hover
 {
-    background-color: rgb(0, 0, 255, 0.5);
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
-#crossLogo
-{
-    transform: scale(0.01);
-}
 
 /*Sticky nav bar change point*/
 .lowerHeader
@@ -163,31 +173,12 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1; 
-    /* border: 1px solid blue; */
+    z-index: 5; 
+    position: absolute;
+    top : 5vh;
 }
 
 
-.stickyNavbar
-{
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    /* border: 1px solid blue; */
-    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; 
-    position: fixed;
-    top: 0vh;
-    left: 0;
-    z-index: 1;
-    visibility: hidden;
-    /* transition: visibility 100ms ease-in-out; */
-}
-
-/*Sticky nav bar change point*/
 #citizenLogo
 {
     width: auto;
@@ -238,7 +229,7 @@ header
     font-size: 13px;
     opacity: 0;
     position: absolute;
-    top: 150px;
+    top: 120px;
     visibility: hidden;
     z-index: 1;
     transition: all 0.5s ease;
@@ -328,7 +319,7 @@ header
 {
     opacity: 1;
     visibility: visible;
-    top: 140px;
+    top: 110px;
 }
 
 .aboutUs:hover .aboutUsListSk, .media:hover .mediaListSk, .products:hover .productsListSk, .services:hover .servicesListSk
@@ -337,8 +328,27 @@ header
     visibility: visible;
     top: 10vh;
 }
+/* -------------------------------------------------------------------------------------------------------------------- */
 
+.stickyNavbar
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* border: 1px solid blue; */
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    /* transition: visibility 100ms ease-in-out; */
+}
 
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 #slideShow
 {

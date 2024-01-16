@@ -4,6 +4,7 @@
 
 let searchLogo = document.getElementsByClassName("searchLogoBlock")[0];
 let crossLogo = document.getElementsByClassName("crossLogoBlock")[0];
+let searchBigLogo = document.getElementById("searchBigLogo");
 let searchBar = document.getElementsByClassName("searchBarBlock")[0];
 searchLogo.addEventListener("click", changetoCross);
 crossLogo.addEventListener("click", hideCross);
@@ -12,8 +13,6 @@ function changetoCross()
 {    
         searchLogo.style.visibility = "hidden";
         searchLogo.style.opacity = "0";
-        crossLogo.style.visibility = "visible";
-        crossLogo.style.opacity = "1";
         searchBar.style.visibility = "visible";
         searchBar.style.opacity = "1";
 }
@@ -22,8 +21,6 @@ function hideCross()
 {
     searchLogo.style.visibility = "visible";
     searchLogo.style.opacity = "1";
-    crossLogo.style.visibility = "hidden";
-    crossLogo.style.opacity = "0";
     searchBar.style.visibility = "hidden";
     searchBar.style.opacity = "0";
 }
@@ -33,6 +30,7 @@ function hideCross()
 
 const lowerHeadInt = document.querySelector(".intersection");
 const navBar = document.querySelector(".stickyNavbar");
+var firstTime = 0;
 const observer = new IntersectionObserver(changeNavbar,
     {
         root:null,
