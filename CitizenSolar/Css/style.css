@@ -43,6 +43,9 @@ header
 {
     width: 100%;
     height: 5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #87bf38;
     font-size: 13px;
     display:flex;
@@ -59,6 +62,18 @@ header
     align-items: center;
     list-style: none;
     /* border: 1px solid blue; */
+}
+
+.uHeadLinks
+{
+    text-decoration: none;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+.uHeadLinks:hover
+{
+    color:#000;
 }
 
 .searchBar
@@ -149,6 +164,7 @@ header
     /* visibility: hidden; */
     /* opacity: 0; */
     /* display: none; */
+    padding: 1px;
     width: 25px;
     height: 80%;
     border-radius: 50%;
@@ -350,6 +366,181 @@ header
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
+.yourQuote
+{
+    width: 380px;
+    height: 75vh;
+    /* border: 1px solid firebrick; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quoteFormBlock
+{
+    width: 90%;
+    height: 100%;
+    background-color: #edeade;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yourQuoteBtn
+{
+    width: 202px;
+    height: 45px;
+    border: none;
+    background-color: #0693e3;
+    color: #ffffff;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 55vh;
+    right: 20vw;
+}
+
+.quoteHead
+{
+    width: 100%;
+    height: 10% ;
+    background-color: #0693e3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quoteHeadText
+{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.quoteForm
+{
+    width: 90%;
+    height: 100%;
+    border: 1px solid firebrick;
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteForm  input:focus, textarea:focus
+{
+    outline: none;
+}
+.inputText
+{
+    width: 90%;
+    height: 6.5vh;
+    border: 1px solid #87bf38;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+.message
+{
+    width: 90%;
+    height: 12vh;
+    resize: none;
+    overflow: auto;
+    border: 1px solid #87bf38;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+::placeholder
+{
+    color: rgba(0,0,0,0.4);
+}
+
+.checkBoxBlock
+{
+    width: 100%;
+    height: 18%;
+    border: 1px solid blue;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    color: black;
+    font-weight: 450;
+}
+
+.checkBoxText
+{
+    float:left;
+}
+
+.checkBox
+{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(0,0,0,0.6);
+    float: left;
+}
+
+.reCaptcha
+{
+    height: 100%;
+    width: 25%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    float: right;
+}
+
+#reCaptchaLogo
+{
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid red; */
+}
+
+.reCapText
+{
+    font-size: 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+.reCapLinks
+{
+    font-size: 8px;
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+
+.reCapLinks:hover
+{
+    text-decoration: underline;
+}
+
+.submit
+{
+    height: 10%;
+    width: 40%;
+    border: 1px solid #87bf38;
+    border-radius: 5px;
+    background-color: #87bf38;
+    font-size: 17px;
+    color: white;
+    margin: 15px 0;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
 #slideShow
 {
     width: 100%;
