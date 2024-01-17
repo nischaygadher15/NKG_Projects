@@ -1,4 +1,3 @@
-  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap'); */
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 
@@ -8,6 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{scroll-behavior:smooth}
 
 body
 {
@@ -371,12 +372,13 @@ header
     width: 380px;
     height: 75vh;
     /* border: 1px solid firebrick; */
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    right: 0;
+    right: -342px; 
     z-index: 5;
     display: flex;
     justify-content: flex-end;
+    transition: right 500ms ease-in-out;
 }
 
 .quoteFormBlock
@@ -393,15 +395,19 @@ header
 
 .yourQuoteBtn
 {
-    width: 202px;
+    width: 250px;
     height: 45px;
     border: none;
     background-color: #0693e3;
-    color: #ffffff;
-    transform: rotate(-90deg);
+    color: #fff;
+    transform: rotate(90deg);
     position: absolute;
-    bottom: 55vh;
-    right: 20vw;
+    bottom: 51vh;
+    right: 18.1vw;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
 }
 
 .quoteHead
@@ -414,6 +420,26 @@ header
     align-items: center;
 }
 
+.crossLogo2
+{
+    width: 8%;
+    height: 62%; 
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.crossLogo2:hover
+{
+    background-color: rgba(0,0,0, 0.7);
+    border: 1px solid rgba(0,0,0, 0.7);
+}
+
+
 .quoteHeadText
 {
     font-size: 22px;
@@ -424,10 +450,12 @@ header
 {
     width: 90%;
     height: 100%;
-    border: 1px solid firebrick;
+    /* border: 1px solid firebrick; */
     display: flex;
     flex-direction: column;
+    padding: 15px 0;
 }
+
 
 .quoteForm  input:focus, textarea:focus
 {
@@ -466,42 +494,54 @@ header
     color: rgba(0,0,0,0.4);
 }
 
+
 .checkBoxBlock
 {
     width: 100%;
     height: 18%;
-    border: 1px solid blue;
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center; */
+    border: 1px solid rgba(0, 0, 0,0.3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: black;
     font-weight: 450;
+    padding: 0 10px;
 }
 
-.checkBoxText
+.checkiBox
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .checkBoxText
 {
     float:left;
-}
+} */
 
 .checkBox
 {
     width: 28px;
     height: 28px;
     border: 1px solid rgba(0,0,0,0.6);
-    float: left;
+    /* float: left; */
 }
 
 .reCaptcha
 {
     height: 100%;
     width: 25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5px;
-    float: right;
+    /* float: right; */
 }
 
 #reCaptchaLogo
@@ -538,7 +578,33 @@ header
     background-color: #87bf38;
     font-size: 17px;
     color: white;
-    margin: 15px 0;
+    margin-top: 10px;
+}
+
+.toHomeBtn
+{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 13vh;
+    right: 3vh;
+    border: 1 px solid #fcb900;
+    border-radius: 50%;
+    background-color: #fcb900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.toHomeBtn:hover
+{
+    background-color: #fcc93c;
 }
 /*----------------------------------------------------------------------------------------------------------------------*/
 #slideShow

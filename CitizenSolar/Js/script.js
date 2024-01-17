@@ -666,7 +666,48 @@ NewsSlideShow();
 
 
 
+// Free Quote Form
+let quoteClass = document.getElementsByClassName("yourQuote")[0];
 
+function quoteForm()
+{
+    quoteClass.style.right = '0';
+    quoteClass.style.transition = ""
+}
+
+function hideQuoteForm()
+{
+    quoteClass.style.right = '-342px';
+}
+
+
+//Home Button
+
+const slideShowInt = document.querySelector(".lowerHeader");
+let homeBtn = document.getElementsByClassName('toHomeBtn')[0];
+const observer3 = new IntersectionObserver(showHomeBtn,
+    {
+        root:null,
+        rootMargin: "30px",
+        threshold: 0
+    });
+
+function showHomeBtn(entries)
+{
+    const ent = entries[0];
+    if (ent.isIntersecting == false)
+    {
+        homeBtn.style.visibility= "visible";
+        homeBtn.style.opacity= "1";
+    }
+    else
+    {
+        homeBtn.style.visibility= "hidden";
+        homeBtn.style.opacity= "0";
+    }
+}
+
+observer3.observe(slideShowInt);
 
 
 

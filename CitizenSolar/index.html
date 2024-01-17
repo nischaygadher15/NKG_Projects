@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="Home">
         <div class="intersection"></div>
         <div class="upperHeader">
             <ul id="uHeadList">
@@ -40,7 +40,7 @@
             <a href="https://www.citizensolar.com/"><img src="./Images/logo.png" alt="Citizen Solar Logo" id="citizenLogo"></a>
             <ul id="lHeadList">
                 <li class="lHeadLi home">
-                    HOME
+                    <a href="#Home" style="text-decoration: none; color: inherit;">HOME</a>
                     <div class="emptyBlock"></div>
                 </li>
                 <li class="lHeadLi aboutUs">
@@ -108,11 +108,11 @@
         <div class="stickyNavbar">
             <ul id="lHeadList">
                 <li class="lHeadLi home">
-                    HOME
+                    <a href="#Home" style="text-decoration: none; color: inherit;">HOME</a>
                     <div class="emptyBlock"></div>
                 </li>
                 <li class="lHeadLi aboutUs">
-                    <p>ABOUT US</p> 
+                    ABOUT US
                     <div class="emptyBlock"></div>
                     <ul class="aboutUsListSk popDownListSticky">
                         <li class="popDownBlock">BLOG</li>
@@ -175,15 +175,14 @@
         </div>
         <!-- Free Quote Tab and Home Button -->
         <div class="yourQuote">
-            <button class="yourQuoteBtn">GET YOUR FREE QUOTE</button>
+            <button class="yourQuoteBtn" onclick="quoteForm()">GET YOUR FREE QUOTE</button>
             <div class="quoteFormBlock">
                 <div class="quoteHead">
                     <h2 class="quoteHeadText">GET YOUR FREE QUOTE</h2>
-                    <div class="crossLogoBlock" style="width: 8%; height: 56%; background-color: white;">
-                        <i class="fa-solid fa-xmark" style="font-size: 15px; color: #000; line-height: 25px;"></i>
-                    </div>
+                    <button class="crossLogo2" onclick="hideQuoteForm()">
+                        <i class="fa-solid fa-xmark" style="font-size: 15px; color: #87bf38; line-height: 25px;"></i>
+                    </button>
                 </div>
-
                 <form class="quoteForm">
 
                     <label for="inputText">
@@ -201,8 +200,10 @@
                     <textarea name="message" cols="20" rows="5" placeholder="Message*" class="message"></textarea>
                     
                     <label for="checkBox" class="checkBoxBlock">
-                        <input type="checkbox" class="checkBox">
-                        <p class="checkBoxText">I'm not a robot</p>
+                        <div class="checkiBox">
+                            <input type="checkbox" class="checkBox">
+                            <p class="checkBoxText">I'm not a robot</p>
+                        </div>
                         <div class="reCaptcha">
                             <img src="./Images/18_logo_48.png" alt="Recaptcha Logo" id="reCaptchaLogo">
                             <p class="reCapText">reCAPTCAH</p>
@@ -219,7 +220,7 @@
             </div>
         </div>
 
-        <a href="" class="toHomeBtn"></a>
+        <a href="#Home" class="toHomeBtn"><i class="fa-solid fa-angle-up"></i></a>
 
     </header>
 
