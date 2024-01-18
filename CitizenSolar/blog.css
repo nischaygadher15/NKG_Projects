@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 
 *
@@ -43,15 +43,22 @@ body
 header
 {
     width: 100%;
-    height: 23vh;
-    /* border: 1px solid firebrick; */
+    height: 80vh;
+    border: 1px solid firebrick;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #87bf38 50%, transparent),
+                      url('./Images/Blog_HeaderBgImg.jpg');
+    background-repeat: no-repeat;
+    background-position:  top center;
+    z-index: 0;
 }
 
 .upperHeader
 {
     width: 100%;
     height: 5vh;
-    background-color: #87bf38;
+    background-color: #66b028;
     font-size: 13px;
     display:flex;
     justify-content: space-between;
@@ -143,8 +150,6 @@ header
     justify-content: center;
     align-items: center;
     cursor: pointer;    
-    /* visibility: hidden;
-    opacity: 0; */
 }
 
 .searchLogoBlock:hover
@@ -161,10 +166,6 @@ header
 .crossLogoBlock
 {
     position: relative;
-    /* left: -40px; */
-    /* visibility: hidden; */
-    /* opacity: 0; */
-    /* display: none; */
     padding: 1px;
     width: 25px;
     height: 80%;
@@ -185,14 +186,12 @@ header
 {
     width: 100%;
     height: 18vh;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5; 
-    /* position: absolute;
-    top : 5vh; */
 }
 
 #citizenLogoBox
@@ -297,7 +296,7 @@ header
 
 .lHeadLi:hover
 {
-    color: #87bf38;
+    color: white;
 }
 
 .lHeadLi:hover .emptyBlock
@@ -612,432 +611,6 @@ header
     background-color: #fcc93c;
 }
 /*----------------------------------------------------------------------------------------------------------------------*/
-#slideShow
-{
-    width: 100%;
-    height: 90vh;
-    background: url('/Images/33_banner-2.jpg') no-repeat;
-    background-size: cover;
-    /* border: 1px solid brown; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.textBlock
-{
-    width: 50%;
-    height: 50%;
-    margin-left: 70px;
-    /* border: 1px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;;
-    align-items: flex-start;
-}
-
-.text
-{
-    height: 70%;
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-
-#uPara
-{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#mPara
-{
-    font-size: 28px;
-    font-weight:300;
-    margin-top: 10px;
-}
-
-#bPara
-{
-    margin-top: 10px;
-    font-size: 15px;
-}
-
-.linkBox
-{
-    width: 60%;
-    height: 50px;
-    margin-top: 20px;
-    /* border: 1px solid brown; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#findMore
-{
-    height: 40px;
-    width: 150px;
-    border: 1px solid green;
-    border-radius: 20px ;
-    background-color: #fff;
-    color:#000;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-}
-
-#findMore:hover
-{
-    background-color: rgba(83, 179, 28, 0.8);
-}
-
-#brochure
-{
-    height: 40px;
-    width: 200px;
-    /* border: 1px solid green; */
-    border-radius: 20px ;
-    background-color: rgba(83, 179, 28, 0.9);
-    color:#fff;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-}
-
-#brochure:hover
-{
-    background-color: rgb(75, 73, 73); 
-}
-
-/* solar panel Feature section start here */
-
-#solarPanelFeatures
-{
-    width: 100%;
-    height: 160vh;
-    /* border: 1px solid green; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.featureTile1
-{
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid red; */
-    background: url("/Images/08_blurb_bg01.jpg") no-repeat;
-    background-size: cover;
-}
-
-
-.featureTile2
-{
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid red; */
-    background: url("/Images/05_blurb_bg02.jpg") no-repeat;
-    background-size: cover;
-}
-
-.featureTile3
-{
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid red; */
-    background: url("/Images/13_blurb_bg03.jpg") no-repeat;
-    background-size: cover;
-}
-
-.featureTile4 
-{
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid red; */
-    background: url("/Images/20_blurb_bg04.jpg") no-repeat;
-    background-size: cover;
-}
-
-.panelPhoto
-{
-    min-width: 90%;
-    height: 45%;
-    /* border: 1px solid yellow; */
-}
-
-.featuresDetails
-{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    /* border: 1px solid blue; */
-}
-
-.featureHead
-{
-    font-size: 16px;
-    margin-top: 60px;
-    margin-bottom: 15px;
-}
-
-.panelName
-{
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-
-.panelFeatures
-{
-    width: 90%;
-    font-size: 16px;
-    text-align: center;
-    line-height: 22px;
-}
-
-.featureTile1, .featureTile2, .featureTile3, .featureTile4
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.featureTile1:hover .panel1 
-{
-    transform: translateY(-15px);
-}
-
-.featureTile1:hover .pDetail1 
-{
-    transform: translateY(15px);
-}
-
-.featureTile2:hover .panel2 
-{
-    transform: translateY(-15px);
-}
-
-.featureTile2:hover .pDetail2 
-{
-    transform: translateY(15px);
-}
-
-.featureTile3:hover .panel3
-{
-    transform: translateY(-15px);
-}
-
-.featureTile3:hover .pDetail3 
-{
-    transform: translateY(15px);
-}
-
-.featureTile4:hover .panel4 
-{
-    transform: translateY(-15px);
-}
-
-.featureTile4:hover .pDetail4
-{
-    transform: translateY(15px);
-}
-
-.panel1, .panel2, .panel3, .panel4, .pDetail1, .pDetail2, .pDetail3, .pDetail4
-{
-    transition: transform 500ms;
-}
-
-
-#aboutUsSection
-{
-    width: 100%;
-    height: 80vh;
-    background-color: #ffffff;
-    /* border: 1px solid blue; */
-    color: black;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.aboutUsBlock
-{
-    width: 50%;
-    height: 100%;
-    /* border: 1px solid yellow; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#aboutUsHead
-{
-    font-size: 50px;
-    font-weight: 600;
-    color: #87bf38;
-    margin-bottom: 20px;
-}
-
-#aboutUsHead::after
-{
-    content:"";
-    width: 8vw;
-    display: block;
-    margin-top: 10px;
-    border-bottom: 2px solid #87bf38;
-}
-
-.aboutUsText
-{
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 25px;
-}
-
-#readMore
-{
-    width: 170px;
-    height: 60px;
-    background-color: #87bf38;
-    border: 1px solid #87bf38;
-    border-radius: 30px;
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-}
-
-#readMore:hover
-{
-    background-color: #fcb900;
-    border-color: #fcb900;
-}
-
-#readMore svg
-{
-    margin-left: 10px;
-}
-
-#citizenSolar
-{
-    width: 100%;
-    height: 75vh;
-    background: url('/Images/09_cta02.jpg') no-repeat center;
-    background-size: cover;
-}
-
-.citizenSolarBlock
-{
-    width: 60%;
-    height: 100%;
-    /* border: 1px solid firebrick;  */
-    padding: 65px;
-}
-
-
-#citizenSolarHead
-{
-    font-size: 38px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-#citizenSolarHead::after
-{
-    content:"";
-    width: 8vw;
-    display: block;
-    margin-top: 20px;
-    border-bottom: 2px solid #87bf38;
-}
-
-.citizenSolarText
-{
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 25px;
-}
-
-#whyCitizenBtn
-{
-    width: 160px;
-    height: 60px;
-    margin-top: 50px;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 30px;
-    color: #87bf38;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-}
-
-#whyCitizenBtn:hover
-{
-    background-color: transparent;
-    color: #ffffff;
-}
-
-
-#bestProducer
-{
-    width: 100%;
-    height: 110vh;
-    background-color: rgba(128, 128, 128, 0.1);
-    /* border: 1px solid firebrick; */
-}
-
-.bestProducerBlock
-{
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-}
-
-.headingBox
-{
-    display: flex;
-    justify-content: center;
-}
-
-#bestProducerHead
-{
-    font-size: 28px;
-    color: #87bf38;    
-}
-
-#bestProducerHead::after
-{
-    content:"";
-    width: 20%;
-    margin-top: 20px;
-    border: 1.5px solid #87bf38;
-    display: block;
-    position: relative;
-    left: 200px;
-}
-
-.bestProducerText
-{
-    font-size: 16px;
-    color: black;
-    line-height: 23px;
-    margin: 25px 0;
-}
 
 
 #quickLinks
@@ -1157,147 +730,6 @@ tr
 }
 
 
-#countingNum
-{
-    width: 100%;
-    height: 60vh;
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.upCounterTile
-{
-    width: 300px;
-    height: 100%;
-    /* border: 1px solid firebrick; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.upCounter
-{
-    width: 200px;
-    height: 200px;
-    border: 9px solid #87bf38;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.counterNum
-{
-    font-size: 40px;
-    font-weight: bolder;
-    color: #87bf38;
-}
-
-.counterCap
-{
-    font-size: 16px;
-    font-weight: bolder;
-    color: #87bf38;
-    padding-top: 25px;
-}
-
-
-#certifications
-{
-    width: 100%;
-    height: 60vh;
-    background-color: #87bf38; /*#87bf38*/
-    /* border: 1px solid blue; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.certificateHead
-{
-    font-size: 50px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.certificateHead:after
-{
-    content:"";
-    width: 8vw;
-    display: block;
-    margin-top: 18px;
-    border-bottom: 2px solid rgba(83, 179, 28);
-}
-
-.certificateSlideshow
-{
-    width: 100%;
-    height: 170px;
-    margin-top: 30px;
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.certificateSlide
-{
-    width: 85%;
-    height:95%;
-    /* border: 1px solid purple; */
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-
-.certificate
-{
-    width: 250px;
-    height: 150px;
-    /* border: 1px solid firebrick; */
-}
-
-
-#leftSlideBtn, #rightSlideBtn
-{
-        width: 30px;
-        height: 30px;
-        border: none;
-        border-radius: 50%; 
-        font-size: 18px;
-        color: #ffffff;
-        background-color: rgba(0, 0, 0,0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-}
-
-#leftSlideBtn
-{
-    position: absolute;
-    left: 30px;
-}
-
-#rightSlideBtn
-{
-    position: absolute;
-    right: 30px;
-}
-
-#leftSlideBtn:hover, #rightSlideBtn:hover
-{
-    background-color: rgba(0, 0, 0,0.7);
-}
-
 
 #news
 {
@@ -1312,28 +744,6 @@ tr
     justify-content: center;
 }
 
-#newsHead
-{
-    height: 180px;
-    width: 100%;
-    font-size: 55px;
-    /* border: 2px solid violet; */
-    color: #87bf38;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#newsHead:after
-{
-    content:"";
-    width: 8vw;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid rgba(83, 179, 28);
-}
 
 .newSlideBlock
 {
@@ -1342,39 +752,6 @@ tr
     /* border: 2px solid blue; */
 }
 
-#leftSlideNewsBtn, #rightSlideNewsBtn
-{
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%; 
-    font-size: 18px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1;
-}
-
-
-#leftSlideNewsBtn
-{
-    position: absolute;
-    left: 20px;
-}
-
-#rightSlideNewsBtn
-{
-    position: absolute;
-    right: 20px;
-}
-
-#leftSlideNewsBtn:hover, #rightSlideNewsBtn:hover
-{
-    background-color: rgba(0, 0, 0,0.7);
-}
 
 .newsSlide
 {
@@ -1384,7 +761,7 @@ tr
     float: left;
     display: flex;
     flex-direction: column;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .newsImg
