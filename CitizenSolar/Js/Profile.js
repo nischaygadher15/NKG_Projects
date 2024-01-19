@@ -97,11 +97,36 @@ function showHomeBtn(entries)
 observer3.observe(slideShowInt);
 
 
+// Tabs
 
+let vision = document.querySelector('button.visionTab');
+let mission = document.querySelector('button.missionTab');
+let visionText = document.querySelector('.visionTabText');
+let missionText = document.querySelector('.missionTabText');
 
+// console.log(vision.classList, mission.classList);
 
+function openVisionTab()
+{
+    console.log("clicked");
+    vision.classList.add("clicked");
+    mission.classList.remove("clicked");
+    visionText.style.visibility = "visible";
+    missionText.style.visibility = "hidden";
+    visionText.style.top = "0";
+    missionText.style.top = "-8.4vh";
+}
 
-
+function openMissionTab()
+{
+    console.log(".clicked");
+    vision.classList.remove("clicked");
+    mission.classList.add("clicked");
+    visionText.style.visibility = "hidden";
+    missionText.style.visibility = "visible";
+    visionText.style.top = "-3vh";
+    missionText.style.top = "-11.4vh";
+}
 
 
 

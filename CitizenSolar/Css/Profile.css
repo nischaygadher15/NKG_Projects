@@ -686,7 +686,7 @@ header
     float: none;
 }
 
-.cliked
+.clicked
 {
     color: white;
     background-color: #66b028; 
@@ -696,19 +696,30 @@ header
 {
     width: 100%;
     height: calc(100% - 8.5vh);
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: rgba(0, 0, 0, 0.05);
     font-size: 16px;
     color: black;
     padding: 15px;
 }
 
+.visionTabText
+{
+    position: relative;
+    top: 0;
+    transition: all 100ms ease-in-out;
+}
 
 .missionTabText
 {
     height: 8.5vh;
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     padding: 10px 15px;
+    visibility: hidden;
+    position: relative;
+    top: -8.4vh;
+    transition: all 100ms ease;
+    z-index: 1;
 }
 
 
