@@ -13,13 +13,13 @@ html{scroll-behavior:smooth}
 body
 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #fff;
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ::placeholder
@@ -43,14 +43,14 @@ body
 header
 {
     width: 100%;
-    height: 80vh;
-    border: 1px solid firebrick;
+    height: 80vh;   
+    /* border: 1px solid firebrick; */
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, #87bf38 50%, transparent),
-                      url('./Images/Blog_HeaderBgImg.jpg');
+    background-image: linear-gradient(to bottom, #7bc22d 50%, transparent),
+                      url('../Images/Blog_HeaderBgImg.jpg');
     background-repeat: no-repeat;
-    background-position:  top center;
+    background-position: top;
     z-index: 0;
 }
 
@@ -191,7 +191,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5; 
+    z-index: 0; 
 }
 
 #citizenLogoBox
@@ -207,7 +207,7 @@ header
     margin-left: 10px;
 }
 
-
+ 
 #lHeadList
 {
     width: 60%;
@@ -610,9 +610,114 @@ header
 {
     background-color: #fcc93c;
 }
+
+
+.headerText
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#headerHead1
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#headerHead2
+{
+    font-size: 16px;
+}
 /*----------------------------------------------------------------------------------------------------------------------*/
 
+#profile
+{
+    width: calc(100% - 60px);
+    height: 120vh;
+    margin: 30px;
+    border: 1px solid firebrick;
+}
 
+#panelRoof
+{
+    width: 50%;
+    height: 42%;
+    background: url('../Images/38_solar-panel-manufacturers-in-india.jpg') no-repeat;
+    background-size: 100% 100%;
+    margin: 0 30px 20px 0;
+    float: left;
+}
+
+.profilePara
+{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+/* Vision and Mission Tabs */
+
+.tabs
+{
+    width: 100%;
+    height: 20vh;
+    border: 1px solid blue;
+}
+
+.visionTab, .missionTab
+{
+    width: 6.5vw;
+    height: 8.5vh;
+    float: left;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 2px;
+}
+
+.missionTab
+{
+    float: none;
+}
+
+.cliked
+{
+    color: white;
+    background-color: #66b028; 
+}
+
+.visionTabText, .missionTabText 
+{
+    width: 100%;
+    height: calc(100% - 8.5vh);
+    border: 1px solid yellow;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    color: black;
+    padding: 15px;
+}
+
+
+.missionTabText
+{
+    height: 8.5vh;
+    border: 1px solid hotpink;
+    padding: 10px 15px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
 #quickLinks
 {
     width: 100%;
@@ -728,116 +833,3 @@ tr
     text-decoration: none;
     color: #ffffff;
 }
-
-
-
-#news
-{
-    width: 100%;
-    height: 150vh;
-    /* border: 2px solid firebrick; */
-    /* overflow: hidden; */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.newSlideBlock
-{
-    width: 100%;
-    height: 88%;
-    /* border: 2px solid blue; */
-}
-
-
-.newsSlide
-{
-    width: 31%;
-    height: 80%;
-    /* border: 1px solid hotpink; */
-    float: left;
-    display: flex;
-    flex-direction: column;
-    /* opacity: 0; */
-}
-
-.newsImg
-{
-    width: 100%;
-    height: auto;
-}
-
-.panelCat
-{
-    max-width: 23%;
-    width: auto;
-    padding : 4px;
-    color: white;
-    font-size: 9px;
-    background-color: rgb(105, 192, 160);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    margin-bottom: 20px; 
-    transition: background-color 0.5s;
-}
-
-.panelCat:hover
-{
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.newsHeading
-{
-    color: black;
-    font-weight: normal;
-    line-height: 35px;
-    font-size: 20px;
-}
-
-.newsHeadLink
-{
-    text-decoration: none;
-}
-
-.newsUploadBy
-{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 13px;
-    margin-top: 5px;
-    margin-bottom: 15px; 
-}
-
-.newsDesp
-{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 16px;
-}
-
-
-.readMoreLink
-{
-    width: 22%;
-    height: 3%;
-    margin-top: 15px;
-    border: 1px solid black;
-    background-color: #fff;
-    font-size: 11px;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-}
-
-.readMoreLink:hover
-{
-    background-color: grey;
-}
-
