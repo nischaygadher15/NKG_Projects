@@ -43,6 +43,7 @@ body
     visibility: hidden;    
 }
 
+/* ------------------------------------------------------------------------------------------------------------------- */
 header
 {
     width: 100%;
@@ -184,7 +185,6 @@ header
 }
 
 
-/*Sticky nav bar change point*/
 .lowerHeader
 {
     width: 100%;
@@ -338,7 +338,6 @@ header
     height: 240px;
 }
 
-/*Sticky nav bar change point*/
 .aboutUs:hover .aboutUsList, .media:hover .mediaList, .products:hover .productsList, .services:hover .servicesList
 {
     opacity: 1;
@@ -632,180 +631,69 @@ header
 }
 /*----------------------------------------------------------------------------------------------------------------------*/
 
-#profile
-{
-    width: calc(100% - 60px);
-    height: 120vh;
-    margin: 30px 30px 0 30px;
-    /* border: 1px solid  firebrick; */
-}
-
-#panelRoof
-{
-    width: 50%;
-    height: 42%;
-    background: url('../Images/38_solar-panel-manufacturers-in-india.jpg') no-repeat;
-    background-size: 100% 100%;
-    margin: 0 30px 20px 0;
-    float: left;
-}
-
-.profilePara
-{
-    color: black;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 25px;
-    margin-bottom: 15px;
-    /* border: 1px solid green; */
-}
-
-/* Vision and Mission Tabs */
-
-.tabs
+#mgmt
 {
     width: 100%;
-    height: 20vh;
-    /* border: 1px solid blue; */
+    height: 135vh;
+    background-color: #ffffff;
 }
 
-.visionTab, .missionTab
+.dashboard
 {
-    width: 6.5vw;
-    height: 8.5vh;
-    float: left;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-right: 2px;
+    width:calc(100% - 60px);
+    height: calc(100% - 120px);
+    margin: 60px 30px;
+    /* border: 1px solid firebrick; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
 }
 
-.missionTab
+.employee
 {
-    float: none;
-}
-
-.clicked
-{
-    color: white;
-    background-color: #66b028; 
-}
-
-.visionTabText, .missionTabText 
-{
-    width: 100%;
-    height: calc(100% - 8.5vh);
-    /* border: 1px solid yellow; */
-    background-color: rgba(0, 0, 0, 0.05);
-    font-size: 16px;
-    color: black;
-    padding: 15px;
-    z-index: -1;
-}
-
-.visionTabText
-{
-    position: relative;
-    top: 0;
-    transition: all 80ms ease-in-out;
-}
-
-.missionTabText
-{
-    height: 8.5vh;
     /* border: 1px solid hotpink; */
-    padding: 10px 15px;
-    visibility: hidden;
-    position: relative;
-    top: -8.4vh;
-    transition: all 80ms ease;
-    z-index: -1;
+
 }
 
-#gpCompanies
+.empImg
 {
     width: 100%;
-    height: 60vh;
-    /* bord er: 1px solid firebrick; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-}
-
-
-.comHeading
-{
-    font-size: 28px;
-    font-weight: 600;
-    color: #87bf38;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.comHeading::after
-{
-    content:"";
-    width: 8vw;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #87bf38;
-}
-
-.photos
-{
-    width: 100%;
-    height: 60%;
+    height: 45%;
     /* border: 1px solid green; */
+}
+
+.empPhoto
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.empName
+{
+    font-size: 25px;
+    font-weight: 500;
+    color: #66b028;
     display: flex;
-    /* justify-content: center; */
+    flex-direction: column;
     align-items: center;
+    margin-top: 15px;
 }
 
-.compPhotos
+.empName:after
 {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    /* border: 1px solid greenyellow; */
-    transition: all 500ms ease-out;
+    content:'';
+    width: 13%;
+    margin: 15px 0;
+    border: 2px solid rgba(0,0,0,0.6);
 }
 
-
-
-#leftSlideBtn, #rightSlideBtn
+.empDetail
 {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 50%;
-    color: white;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+    line-height: 20px;
 }
-
-#leftSlideBtn
-{
-    position: absolute;
-    left:40px;
-}
-
-#rightSlideBtn
-{
-    position: absolute;
-    right:45px;
-}
-
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 #quickLinks
