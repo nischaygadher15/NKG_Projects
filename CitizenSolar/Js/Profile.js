@@ -131,4 +131,284 @@ function openMissionTab()
 
 
 
+// Companies Slide Show
+
+let companySlide = document.querySelectorAll(".compPhotos");
+var len = 10, a1 = 9, b1 = 0, c1 = 1, d1 = 2, e1 = 3,f1 = 4, flag = 0, cont = 0;
+let leftBtn = document.getElementById("leftSlideBtn");
+let rightBtn = document.getElementById("rightSlideBtn");
+leftBtn.addEventListener("click", previousSlide);
+rightBtn.addEventListener("click", nextSlide);
+
+function slideVarDec1()
+{
+    if (a1 < 2)
+    {
+        if (a1 == 1)
+        {
+            a1 = 9;
+        }
+        else
+        {
+            a1 = 8;
+        }
+    }
+    else
+    {
+        a1 -= 2;
+    }
+
+
+    if (b1 < 2)
+    {
+        if (b1 == 1)
+        {
+            b1 = 9;
+        }
+        else
+        {
+            b1 = 8;
+        }
+    }
+    else
+    {
+        b1 -= 2;
+    }
+
+    if (c1 < 2)
+    {
+        if (c1 == 1)
+        {
+            c1 = 9;
+        }
+        else
+        {
+            c1 = 8;
+        }
+    }
+    else
+    {
+        c1 -= 2;
+    }
+
+
+    if (d1 < 2)
+    {
+        if (d1 == 1)
+        {
+            d1 = 9;
+        }
+        else
+        {
+            d1 = 8;
+        }
+    }
+    else
+    {
+        d1 -= 2;
+    }
+
+
+    if (e1 < 2)
+    {
+        if (e1 == 1)
+        {
+            e1 = 9;
+        }
+        else
+        {
+            e1 = 8;
+        }
+    }
+    else
+    {
+        e1 -= 2;
+    }
+
+
+    if (f1 < 2)
+    {
+        if (f1 == 1)
+        {
+            f1 = 9;
+        }
+        else
+        {
+            f1 = 8;
+        }
+    }
+    else
+    {
+        f1 -= 2;
+    }
+}
+
+
+function previousSlide()
+{   
+    flag = -1;
+}
+
+function nextSlide()
+{
+    flag = 1;
+}
+
+function slideShow()
+{
+    if (a1 < len)
+        {
+            //Hide Slide Left Side
+            console.log('companySlide',a1);
+            companySlide[a1].style.left = "-40%";
+            companySlide[a1].style.opacity = "0";
+            a1++;
+        }
+    else
+        {
+            a1 = 0;
+            //Hide Slide Left Side
+            console.log('companySlide',a1);
+            companySlide[a1].style.left = "-40%";
+            companySlide[a1].style.opacity = "0";
+            a1++;
+        }
+
+    if (b1 < len)
+        {
+            // left side 
+            console.log('companySlide',b1);
+            companySlide[b1].style.left = "9%";
+            companySlide[b1].style.opacity = "1";
+            b1++;
+        }
+    else
+        {
+            b1 = 0;
+            // left side 
+            console.log('companySlide',b1);
+            companySlide[b1].style.left = "9%";
+            companySlide[b1].style.opacity = "1";
+            b1++;
+        }
+
+    if (c1 < len)
+        {
+            // Center
+            console.log('companySlide',c1);
+            companySlide[c1].style.left = "30%";
+            companySlide[c1].style.opacity = "1";
+            c1++;
+        }
+    else
+        {
+            c1 = 0;
+            // Center
+            console.log('companySlide',c1);
+            companySlide[c1].style.left = "30%";
+            companySlide[c1].style.opacity = "1";
+            c1++;
+        }
+
+    if (d1 < len)
+        {
+            // right side
+            console.log('companySlide',d1);
+            companySlide[d1].style.left = "51%";
+            companySlide[d1].style.opacity = "1";
+            d1++;
+        }
+    else
+        {
+            d1 = 0;
+            // right side
+            console.log('companySlide',d1);
+            companySlide[d1].style.left = "51%";
+            companySlide[d1].style.opacity = "1";
+            d1++;
+        }
+
+
+    if (e1 < len)
+        {
+            //Hide Slide Right 
+            console.log('companySlide',e1);
+            companySlide[e1].style.left = "72%";
+            companySlide[e1].style.opacity = "1";
+            e1++;
+        }
+    else
+        {
+            e1 = 0;
+            //Hide Slide Right Side
+            console.log('companySlide',e1);
+            companySlide[e1].style.left = "72%";
+            companySlide[e1].style.opacity = "1";
+            e1++;
+        }
+        
+    if (f1 < len)
+        {
+            //Hide Slide Right 
+            console.log('companySlide',f1);
+            companySlide[f1].style.left = "150%";
+            companySlide[f1].style.opacity = "0";
+            f1++;
+        }
+    else
+        {
+            f1 = 0;
+            //Hide Slide Right Side
+            console.log('companySlide',f1);
+            companySlide[f1].style.left = "150%";
+            companySlide[f1].style.opacity = "0";
+            f1++;
+        }
+        
+    
+        function timer1()
+        {
+            if(flag == -1)
+            {
+                slideVarDec1();
+                console.log("slideVarDec1")
+                flag = 0;
+                cont = 0;
+                slideShow();
+            }
+            else
+            {
+                if (flag == 0)
+                {
+                    if(cont < 30)
+                    {
+                        console.log(cont);
+                        cont++;
+                        setTimeout(() => {timer1()},100);    
+                    }
+                    else
+                    {
+                        cont = 0;
+                        slideShow();
+                    }
+
+                }
+                else
+                {
+                    flag = 0;
+                    cont = 0;
+                    console.log("flag = 1");
+                    slideShow();
+                }
+            }
+
+        }
+
+        timer1();
+
+}
+
+slideShow();
+
+
 

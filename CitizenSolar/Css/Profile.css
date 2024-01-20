@@ -19,7 +19,10 @@ body
     font-size: 14px;
     color: #fff;
     position: relative;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 
 ::placeholder
@@ -522,10 +525,6 @@ header
     align-items: center;
 }
 
-/* .checkBoxText
-{
-    float:left;
-} */
 
 .checkBox
 {
@@ -601,7 +600,7 @@ header
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
-    z-index: 2;
+    z-index: 50;
     visibility: hidden;
     opacity: 0;
 }
@@ -637,8 +636,8 @@ header
 {
     width: calc(100% - 60px);
     height: 120vh;
-    margin: 30px;
-    border: 1px solid firebrick;
+    margin: 30px 30px 0 30px;
+    /* border: 1px solid  firebrick; */
 }
 
 #panelRoof
@@ -658,6 +657,7 @@ header
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 15px;
+    border: 1px solid green;
 }
 
 /* Vision and Mission Tabs */
@@ -666,7 +666,7 @@ header
 {
     width: 100%;
     height: 20vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .visionTab, .missionTab
@@ -701,13 +701,14 @@ header
     font-size: 16px;
     color: black;
     padding: 15px;
+    z-index: -1;
 }
 
 .visionTabText
 {
     position: relative;
     top: 0;
-    transition: all 100ms ease-in-out;
+    transition: all 80ms ease-in-out;
 }
 
 .missionTabText
@@ -718,14 +719,92 @@ header
     visibility: hidden;
     position: relative;
     top: -8.4vh;
-    transition: all 100ms ease;
-    z-index: 1;
+    transition: all 80ms ease;
+    z-index: -1;
+}
+
+#gpCompanies
+{
+    width: 100%;
+    height: 60vh;
+    /* bord er: 1px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+
+.comHeading
+{
+    font-size: 28px;
+    font-weight: 600;
+    color: #87bf38;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comHeading::after
+{
+    content:"";
+    width: 8vw;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #87bf38;
+}
+
+.photos
+{
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid green; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.compPhotos
+{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    /* border: 1px solid greenyellow; */
+    transition: all 500ms ease-out;
 }
 
 
 
+#leftSlideBtn, #rightSlideBtn
+{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
 
+#leftSlideBtn
+{
+    position: absolute;
+    left:40px;
+}
 
+#rightSlideBtn
+{
+    position: absolute;
+    right:45px;
+}
 
 
 /*----------------------------------------------------------------------------------------------------------------------*/
@@ -738,6 +817,7 @@ header
     background-size: cover;
     display: flex;
     font-size: 16px;
+    /* margin-top: 100px; */
 }
 
 .makeInIndia
