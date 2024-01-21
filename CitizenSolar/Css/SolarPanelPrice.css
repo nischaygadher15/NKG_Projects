@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior:smooth}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+::placeholder
+{
+    color: white;
+}
+
+
+.intersection
+{
+    width: 100%;
+    height: 23vh;
+    /* border: 1px solid blue; */
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+header
+{
+    width: 100%;
+    height: 80vh;   
+    /* border: 1px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #7bc22d 50%, transparent),
+                      url('../Images/Blog_HeaderBgImg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 0;
+}
+
+.upperHeader
+{
+    width: 100%;
+    height: 5vh;
+    background-color: #66b028;
+    font-size: 13px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#uHeadList
+{
+    width: 28%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    /* border: 1px solid blue; */
+}
+
+.uHeadLinks
+{
+    text-decoration: none;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+.uHeadLinks:hover
+{
+    color:#000;
+}
+
+.searchBar
+{
+    width: 21%;
+    height: 100%;
+    /* border: 1px solid firebrick; */
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+    padding-right: 15px;
+}
+
+.searchBarBlock
+{
+    width: 95%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    right: -25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    /* border: 1px solid yellow; */
+    z-index: 1;
+}
+
+#searchText
+{
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+    outline: none;
+    background-color: transparent;
+}
+
+
+#searchBigLogo
+{
+    transform: scale(0.5);
+    /* border: 1px solid black; */
+}
+
+#searchBigLogo:hover
+{
+    transform: scale(0.65);
+}
+
+
+.searchLogoBlock
+{
+    width: 25px;
+    height: 80%;
+    border-radius: 50%;
+    /* margin-left: 15px; */
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+}
+
+.searchLogoBlock:hover
+{
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+#searchLogo
+{
+    transform: scale(0.25);
+}
+
+
+.crossLogoBlock
+{
+    position: relative;
+    padding: 1px;
+    width: 25px;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.crossLogoBlock:hover
+{
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+
+.lowerHeader
+{
+    width: 100%;
+    height: 18vh;
+    background-color: transparent;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0; 
+}
+
+#citizenLogoBox
+{
+    width: 11%;
+    height: 72%;
+}
+
+#citizenLogo
+{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+ 
+#lHeadList
+{
+    width: 60%;
+    height: 100%;
+    color: #000;
+    font-size: 13px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid darkmagenta;  */
+}
+
+
+.home, .media, .aboutUs, .capability, .products, .services, .faqs, .contactUs
+{
+    /* border: 1px solid blue;  */
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emptyBlock
+{
+    width:0%;
+    height: 2px;
+    margin-top: 1px;
+    background-color: #87bf38;
+    transition: 0.5s;
+}
+
+/*Sticky nav bar change point*/
+.popDownList
+{
+    width: 230px;
+    background-color:#87bf38;
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.popDownListSticky
+{
+    width: 230px;
+    background-color:#87bf38;
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0;
+    position: absolute;
+    top: 11vh;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.popDownBlock
+{
+    width: 100%;
+    height: 35px;
+    padding: 0px 10px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popDownBlock2
+{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.lHeadLi:hover
+{
+    color: white;
+}
+
+.lHeadLi:hover .emptyBlock
+{
+    width: 100%;
+}
+
+
+.popDownBlock:hover
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popDownBlock2:hover
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.aboutUsList, .aboutUsListSk
+{
+    height: 175px;
+}
+
+.mediaList, .mediaListSk
+{
+    height: 240px;
+}
+
+.productsList, .productsListSk
+{
+    height: 210px;
+}
+
+.servicesList, .servicesListSk
+{
+    height: 240px;
+}
+
+.aboutUs:hover .aboutUsList, .media:hover .mediaList, .products:hover .productsList, .services:hover .servicesList
+{
+    opacity: 1;
+    visibility: visible;
+    top: 140px;
+}
+
+.aboutUs:hover .aboutUsListSk, .media:hover .mediaListSk, .products:hover .productsListSk, .services:hover .servicesListSk
+{
+    opacity: 1;
+    visibility: visible;
+    top: 10vh;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.stickyNavbar
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* border: 1px solid blue; */
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    /* transition: visibility 100ms ease-in-out; */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.yourQuote
+{
+    width: 380px;
+    height: 75vh;
+    /* border: 1px solid firebrick; */
+    position: fixed;
+    bottom: 0;
+    right: -342px; 
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    transition: right 500ms ease-in-out;
+}
+
+.quoteFormBlock
+{
+    width: 90%;
+    height: 100%;
+    background-color: #edeade;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yourQuoteBtn
+{
+    width: 250px;
+    height: 45px;
+    border: none;
+    background-color: #0693e3;
+    color: #fff;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 51vh;
+    right: 18.1vw;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+}
+
+.quoteHead
+{
+    width: 100%;
+    height: 10% ;
+    background-color: #0693e3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.crossLogo2
+{
+    width: 8%;
+    height: 62%; 
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.crossLogo2:hover
+{
+    background-color: rgba(0,0,0, 0.7);
+    border: 1px solid rgba(0,0,0, 0.7);
+}
+
+
+.quoteHeadText
+{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.quoteForm
+{
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+
+.quoteForm  input:focus, textarea:focus
+{
+    outline: none;
+}
+.inputText
+{
+    width: 90%;
+    height: 6.5vh;
+    border: 1px solid #87bf38;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+.message
+{
+    width: 90%;
+    height: 12vh;
+    resize: none;
+    overflow: auto;
+    border: 1px solid #87bf38;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+::placeholder
+{
+    color: rgba(0,0,0,0.4);
+}
+
+
+.checkBoxBlock
+{
+    width: 100%;
+    height: 18%;
+    border: 1px solid rgba(0, 0, 0,0.3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: 450;
+    padding: 0 10px;
+}
+
+.checkiBox
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.checkBox
+{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(0,0,0,0.6);
+    /* float: left; */
+}
+
+.reCaptcha
+{
+    height: 100%;
+    width: 25%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* float: right; */
+}
+
+#reCaptchaLogo
+{
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid red; */
+}
+
+.reCapText
+{
+    font-size: 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+.reCapLinks
+{
+    font-size: 8px;
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+
+.reCapLinks:hover
+{
+    text-decoration: underline;
+}
+
+.submit
+{
+    height: 10%;
+    width: 40%;
+    border: 1px solid #87bf38;
+    border-radius: 5px;
+    background-color: #87bf38;
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+}
+
+.toHomeBtn
+{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 13vh;
+    right: 3vh;
+    border: 1 px solid #fcb900;
+    border-radius: 50%;
+    background-color: #fcb900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.toHomeBtn:hover
+{
+    background-color: #fcc93c;
+}
+
+
+.headerText
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#headerHead1
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#headerHead2
+{
+    font-size: 16px;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+#main
+{
+    width: 100%;
+    height: 500vh;
+    /* border: 1px solid firebrick; */
+    padding: 40px 15px;
+}
+
+#title
+{
+    font-size: 28px;
+    color:#66b028;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title::after
+{
+    content:'';
+    width:  8%;
+    border: 1px solid #66b028;
+    margin-top: 20px;
+}
+
+.normalPara
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+    margin: 18px 0;
+    text-align: justify;
+}
+
+.exPad
+{
+    padding-left: 15px;
+}
+
+.block1
+{
+    width: 90%;
+    height: 60vh;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.subBk1
+{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subHead
+{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.freeQuoteBtn
+{
+    width: 13%;
+    height: 1.5%;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    color: white;
+    background-color:#66b028;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.table
+{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.priceTable
+{
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid violet; */
+}
+
+#tabelHead
+{
+    font-size: 52px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.priceTable
+{
+    width: 100%;
+    height: calc(100% - 70px);
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    /* border: 1px solid firebrick; */
+}
+
+.priceTable, .priceTable tr, .priceTable th, .priceTable td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+.priceTable th
+{
+    text-align: center;
+    height: 45px;
+}
+
+.priceTable th:nth-child(1)
+{
+    width: 50%;
+}
+
+.priceTable th:nth-child(2)
+{
+    width: 25%;
+}
+
+.priceTable th:nth-child(3)
+{
+    width: 25%;
+}
+
+.priceTable tr:not(tr:nth-child(1))
+{
+    height: 60px;
+}
+
+.priceTable td:nth-child(1), .priceTable td:last-child
+{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.priceTable:nth-child(2)
+{
+    text-align: center;
+}
+
+.priceTable td a
+{
+    text-decoration: none;
+    color:#66b028;
+    background-color: rgb(216, 209, 209);
+    padding: 15px 40px;
+}
+
+.priceTable td:last-child
+{
+    text-align: center;
+}
+
+.questions
+{
+    width: 100%;
+    height: 300vh;
+    /* border: 1px solid darkmagenta; */
+}
+
+.paraHead
+{
+    color: rgba(0,0,0, 0.8);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+#quickLinks
+{
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid firebrick; */
+    background: url('/Images/09_cta02.jpg') no-repeat left;
+    background-size: cover;
+    display: flex;
+    font-size: 16px;
+    /* margin-top: 100px; */
+}
+
+.makeInIndia
+{
+    width: 27%;
+    height: 100%;
+    /* border: 1px solid blueviolet; */
+    padding-left: 15px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+#ftCitizenLogo
+{
+    width: auto;
+    height: auto;
+    margin: 30px 0 10px 0;
+}
+
+.mkIndiaText
+{
+    margin: 10px 0 20px 0;
+    line-height: 25px;
+}
+
+.copyRightText
+{
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+#makeIndiaLogo
+{
+    width: 180px;
+    height: 90px;
+}
+
+.linkTableBlock
+{
+    width: 73%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkTable
+{
+    width: 100%;
+    height: 70%;
+}
+
+#linkTable a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#linkTable a:hover
+{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+th
+{
+    height: 50px;
+    width: 33.33%;
+    font-size: 18px;
+    text-align: left;
+}
+
+tr
+{
+    height: 28px;
+}
+
+
+.heading3
+{
+    font-size: 18px;
+}
+
+
+.socialMediaIcons
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#facebook:hover
+{
+    fill:#000000;
+}
+
+.copyRightText a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
