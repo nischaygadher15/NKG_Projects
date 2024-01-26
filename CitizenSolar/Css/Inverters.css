@@ -630,65 +630,262 @@ header
     font-size: 16px;
 }
 /*----------------------------------------------------------------------------------------------------------------------*/
-
-#mgmt
+#main
 {
     width: 100%;
-    height: 135vh;
-    background-color: #ffffff;
+    height: 550vh;
+    border: 1px solid firebrick;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.dashboard
-{
-    width:calc(100% - 60px);
-    height: calc(100% - 120px);
-    margin: 60px 30px;
-    /* border: 1px solid firebrick; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
-}
-
-
-.empImg
+#inverters
 {
     width: 100%;
-    height: 45%;
-    /* border: 1px solid green; */
+    height: 55vh;
+    /* border: 1px solid blue; */
 }
 
-.empPhoto
+.presale
 {
     width: 100%;
-    height: 100%;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 48vh;
+    /* border: 1px solid blue; */
 }
 
-.empName
+.title
 {
-    font-size: 25px;
-    font-weight: 500;
-    color: #66b028;
+    color:#66b028;
+    font-size: 30px;
+    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    justify-content: center;
 }
 
-.empName:after
+.title::after
 {
-    content:'';
-    width: 13%;
-    margin: 15px 0;
-    border: 2px solid rgba(0,0,0,0.6);
+    content:"";
+    width: 8%;
+    border: 1px solid #66b028;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
 }
 
-.empDetail
+.psBox
 {
-    color: rgba(0,0,0,0.6);
-    font-size: 15px;
-    line-height: 20px;
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid firebrick; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    padding: 0 35px;
+    background-color: rgba(0, 0, 0, 0.05);
 }
+
+
+.psBlock
+{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.psPic
+{
+    width: 23%;
+    height: auto;
+}
+
+.psText
+{
+    color:#66b028;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.afterSale
+{
+    width: 100%;
+    height: 65vh;
+    /* border: 1px solid blue; */
+}
+
+.afterSaleBox
+{
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+}
+
+.afterSaleTile
+{
+    /* border: 1px solid violet; */
+    padding-top: 20px;
+}
+
+.subTitle
+{
+    color:#66b028;
+    font-size: 20px;
+    display: block;
+    font-weight: bolder;
+}
+
+
+.list
+{
+    color: rgba(0,0,0,0.5);
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.list > li
+{
+    height: 70px;
+}
+
+
+.csInverters
+{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+}
+
+
+.csiblock1
+{
+    width: 100%;
+    height: 65vh;
+    /* border: 1px solid blue; */
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px 0 30px;
+}
+
+.csiblock2
+{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.csiblock3
+{
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid blue; */
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px 0 30px;
+} 
+
+.csiblock4
+{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.csiImg
+{
+    /* border: 1px solid violet; */
+}
+
+.csiFeatures
+{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid firebrick; */
+    padding: 45px 0;
+}
+
+.csiFeatureHead
+{
+    color:#66b028;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.csiList
+{
+    color: black;
+    font-size: 16px;
+    padding-left: 25px;
+}
+
+
+
+.csiList:nth-child(2), .csiList:nth-child(4)
+{
+    line-height: 30px;
+}
+
+.csiList  li
+{
+    height: 40px;
+}
+
+
+.csiList > li::marker
+{
+    font-size: 25px;
+    color:#66b028;
+}
+
+.extraHt > li, .extraHt1 > li
+{
+    margin: 18px 0;
+    /* border: 1px solid #fcb900; */
+}
+
+.extraHt > li:nth-child(6), .extraHt > li:nth-child(7)
+{
+    height: 60px;
+}
+
+
+.extraHt1 > li:nth-child(5)
+{
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 #quickLinks
