@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation</title>
+        <link rel="icon" type="image/x-icon" href="./images/341099_facebook_icon.png">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <main id="main">
+            <div class="container row alc">
+                <div class="row jcb">
+                    <div class="col-55">
+                        <div class="text">
+                            <div class="text-main">
+                                <img src="./images/facebook.svg" alt="Facebook Logo" class="facebookLogo">
+                                <p class="para">
+                                    Facebook helps you connect and share with the people in your life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-40">
+                        <div class="signUpForm-main">
+                            <div class="form-title">
+                                <p class="signUpTitle"><span class="bold">Sign Up</span><br> it's quick and easy.</p>
+                            </div>
+                            <div class="signUpBlk">
+                                <form id="signUp" onsubmit="return checkForm()">
+                                    <div class="row jcb">
+                                        <label for="#" class="fnameLb">
+                                            <input type="text" name="fName" class="fName" placeholder="First Name" id="f-name">
+                                            <i class="fa-solid fa-circle-exclamation excMk"></i>
+                                        </label>
+                                        <label for="#" class="lNameLb row jcr">
+                                            <input type="text" name="lName" class="lName" placeholder="Last Name" id="l-name">
+                                            <i class="fa-solid fa-circle-exclamation excMk"></i>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <label for="#" class="mobileNoLb">
+                                            <input type="number" name="mobileNo" class="mobileNo" placeholder="Mobile number" id="mob-no">
+                                            <i class="fa-solid fa-circle-exclamation excMk"></i>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <label for="#" class="pwdLb">
+                                            <input type="password" name="pwd" class="pwd" placeholder="New password" id="p-w-d">
+                                            <i class="fa-solid fa-circle-exclamation excMk"></i>
+                                        </label>
+                                    </div>
+                                    <div class="dobBlk row fxc">
+                                        <p class="dobText">Date of birth <a href="#"><i class="fa fa-question-circle"></i></a></p>
+                                        <div class="row jcb">
+                                            <select name="bidthDate" id="birthDate">
+                                                <option value="DD" selected>DD</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select>
+                                            <select name="birthMonth" id="birthMonth">
+                                                <option value="MMM" selected>MMM</option>
+                                                <option value="jan">Jan</option>
+                                                <option value="feb">Feb</option>
+                                                <option value="mar">Mar</option>
+                                                <option value="apr">Apr</option>
+                                                <option value="may">May</option>
+                                                <option value="june">June</option>
+                                                <option value="july">July</option>
+                                                <option value="aug">Aug</option>
+                                                <option value="sep">Sep</option>
+                                                <option value="oct">Oct</option>
+                                                <option value="nov">Nov</option>
+                                                <option value="dec">Dec</option>
+                                            </select>
+                                            <select name="birthYear" id="birthYear">
+                                                <option value="YYYY" selected>YYYY</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="genderBox">
+                                        <p class="genderText">Gender <a href="#"><i class="fa fa-question-circle"></i></a></p>
+                                        <div class="row jcb">
+                                            <label for="f" class="row gOp jcb">
+                                                    <p class="f-text">Female</p>
+                                                    <input type="radio" name="gender" value="female" id="f">
+                                            </label>
+                                            <label for="m" class="row gOp jcb">
+                                                    <p class="m-text">Male</p>
+                                                    <input type="radio" name="gender" value="male"id="m">
+                                            </label>
+                                            <label for="c" class="row gOp jcb">
+                                                    <p class="c-text">Custom</p>
+                                                    <input type="radio" name="gender" value="custom"id="c">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="bottomPara1">
+                                        People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.
+                                    </p>
+                                    <p class="bottomPara2">
+                                        By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                                    </p>
+                                    <input type="submit" value="Sign Up" id="signUpBtn">
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>

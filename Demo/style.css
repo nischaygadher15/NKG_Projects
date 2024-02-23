@@ -1,0 +1,219 @@
+@font-face{
+    font-family: 'SFProText';
+    src:  url(./Fonts/SF-Pro-Text-Regular.otf);  
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(./Fonts/SF-Pro-Display-Regular.otf);
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:#F0F2F5;
+}
+
+.container
+{
+    padding: 55px 100px 0 100px;
+}
+
+.row
+{
+    display: flex;
+}
+
+.fxc
+{
+    flex-direction: column;
+}
+
+.jcb
+{
+    justify-content: space-between;
+}
+
+.jcr
+{
+    justify-content: flex-end;
+}
+
+.brd
+{
+    border: 1px solid red;
+}
+
+.col-55
+{
+    width: 55%;
+}
+
+.col-40
+{
+    width: 41%;
+}
+
+
+
+.text
+{
+    padding:80px 0 100px 50px;
+}
+
+.facebookLogo 
+{
+    width: 60%;
+    margin-left: -30px;
+}
+
+.para
+{
+    font-size: 30px;
+    font-family: 'SFProText';
+}
+
+.signUpForm-main   
+{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+}
+
+.signUpBlk {
+    padding: 10px 15px 20px 15px;
+}
+
+.form-title
+{
+    border-bottom: 1px solid #DADDE1;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.signUpTitle, .dobText, .bottomPara1,
+.bottomPara2, .genderText
+{
+    color: #606770;
+    font-family: 'SFProText';
+}
+
+.bold
+{
+    font-family: 'SFProDisplay';
+    font-size: 38px;
+    color: #1C1E21;
+    letter-spacing: 2px; 
+    font-weight: bold;
+    line-height: 52px;
+}
+
+.fnameLb, .lNameLb, .mobileNoLb, .pwdLb
+{
+    width: 48.5%;
+    position: relative;
+}
+
+.mobileNoLb, .pwdLb
+{
+    width: 100%;
+}
+
+
+.fName, .lName, .mobileNo, .pwd
+{
+    width: 100%;
+    padding: 12px;
+    background-color: #F5F6F7;
+    border: 1px solid #CCD0D5;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+
+
+.fa-circle-exclamation 
+{
+    font-size: 16px;
+    color: #B94A48;
+    position: absolute;
+    top: 35%;
+    right: 10px;
+}
+
+.excMk
+{
+    opacity: 0;
+}
+
+
+.dobBlk
+{
+    margin: 10px 0;
+}
+
+#birthDate, #birthMonth, #birthYear, .gOp
+{
+    border: 1px solid #CCD0D5;
+    background-color: transparent;
+}
+
+select
+{
+    width: 30%;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.genderBox
+{
+    margin: 10px 0;
+}
+
+.gOp
+{
+    width: 30%;
+    border: 1px solid #CCD0D5;
+    padding: 8px;
+}
+
+.bottomPara1, .bottomPara2
+{
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+#signUpBtn
+{
+    display: block;
+    background-color:#4CA507;
+    padding: 8px 70px;
+    margin: 12px auto;
+    border: 1px solid #4CA507;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+}
+
+::placeholder
+{
+    font-size: 15px;
+}
+
+.fa-question-circle
+{
+    color: #606770;
+    font-size: 14px;
+}
